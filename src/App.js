@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar.js';
-import Intro from './components/Intro.js';
+import Landing from './components/Landing.js';
 import Skills from './components/Skills.js';
 import Projects from './components/Projects.js';
 import About from './components/About.js';
@@ -11,7 +11,7 @@ function App() {
 		<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen'>
 			<NavBar />
 			<div className='flex flex-col justify-center items-center'>
-				<Intro />
+				<Landing />
 				<Skills />
 				<Projects />
 				<About />

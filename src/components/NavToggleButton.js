@@ -3,7 +3,7 @@ import React from 'react';
 export default function NavToggleButton({ setIsOpen, isOpen }) {
 	return (
 		<button
-			className='absolute right-16 flex sm:hidden flex-col items-center justify-center w-12 h-8 px-2 group hover:shadow-2xl'
+			className='absolute right-8 flex sm:hidden flex-col items-center justify-center w-12 h-8 px-2 group hover:shadow-2xl'
 			onClick={() => setIsOpen(!isOpen)}
 		>
 			<div
