@@ -3,25 +3,29 @@
 @tailwind utilities;
 
 .custom-class {
-  @apply hover:opacity-20;
+	@apply hover:opacity-20;
 }
 
 @layer utilities {
-  .nav-option:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-    @apply bg-turq-400
-  }
+	.nav-option:after {
+		background: none repeat scroll 0 0 transparent;
+		bottom: 0;
+		content: '';
+		display: block;
+		height: 2px;
+		left: 50%;
+		position: absolute;
+		transition: width 0.3s ease 0s, left 0.3s ease 0s;
+		width: 0;
+		@apply bg-turq-400;
+	}
 
-  .nav-option:hover:after {
-    width: 70%; 
-    left: 15%; 
-  }
+	.nav-option:hover:after {
+		width: 70%;
+		left: 15%;
+	}
+
+	.w-1\/7 {
+		width: 14.5%;
+	}
 }
