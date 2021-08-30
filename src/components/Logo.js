@@ -1,9 +1,9 @@
 import React from 'react';
 
-import github from '../assets/github.png';
-import instagram from '../assets/instagram.png';
-import fiverr from '../assets/fiverr.png';
-import linkedin from '../assets/linkedin.png';
+// import github from '../assets/github.png';
+// import instagram from '../assets/instagram.png';
+// import fiverr from '../assets/fiverr.png';
+// import linkedin from '../assets/linkedin.png';
 
 export default function Logo({ className }) {
 	return (

@@ -35,6 +35,7 @@ module.exports = {
 			display: ['hover', 'focus'],
 			ringWidth: ['hover', 'focus'],
 			fontSize: ['hover'],
+			fontWeight: ['hover'],
 		},
 	},
 	plugins: [],
