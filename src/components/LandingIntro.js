@@ -7,7 +7,7 @@ export function LandingIntro() {
 	return (
 		<div className='mx-3'>
 			<p className='font-light text-center text-xl mt-10 mb-2'>
-				Hi, I'm{' '}
+				{" Hi I'm "}
 				<span
 					className={`transition duration-1000 ${
 						showArticle ? 'opacity-0' : 'opacity-100'

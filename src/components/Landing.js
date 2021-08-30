@@ -8,7 +8,7 @@ export default function Landing() {
 	return (
 		<div className='w-screen flex flex-col-reverse sm:flex-row justify-center items-center text-seashell my-20'>
 			<div>
-				{<LandingIntro />}
+				<LandingIntro />
 				<LandingPageButtons />
 			</div>
 			{/* Image */}
