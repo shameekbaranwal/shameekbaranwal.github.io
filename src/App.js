@@ -8,7 +8,7 @@ import Footer from './components/Footer.js';
 
 function App() {
 	return (
-		<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen'>
+		<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen overflow-hidden'>
 			<NavBar />
 			<div className='flex flex-col justify-center items-center'>
 				<Landing />
