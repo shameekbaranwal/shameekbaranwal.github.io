@@ -8,8 +8,8 @@ export default function VerticalNavOptions({ isOpen, setIsOpen }) {
 
 	return (
 		<div
-			className={`w-full sm:hidden transition-all duration-300 flex flex-col absolute justify-start items-center bg-gradient-to-tl from-richblue-500 to-richblue-800 gap-y-6 overflow-hidden z-10 ${
-				isOpen ? 'h-full pt-10' : 'h-0'
+			className={`outline-none w-full sm:hidden transition-all duration-300 flex flex-col fixed top-24 -mt-1 justify-start items-center bg-gradient-to-tl from-richblue-500 to-richblue-800 gap-y-6 overflow-hidden z-10 ${
+				isOpen ? 'h-full pt-10 bottom-0 ' : 'h-0'
 			}`}
 		>
 			<NavOption name='Skills' href='/#' />
