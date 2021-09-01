@@ -1,12 +1,12 @@
 import React from 'react';
 
-import pfp from '../assets/dp.png';
+import pfp from '../assets/social/dp.png';
 import { LandingIntro } from './LandingIntro';
 import { LandingPageButtons } from './LandingPageButtons';
 
 export default function Landing() {
 	return (
-		<div className='w-screen flex flex-col-reverse sm:flex-row justify-center items-center text-seashell my-32'>
+		<div className='w-screen flex flex-col-reverse sm:flex-row justify-center items-center text-seashell min-h-screen'>
 			<div>
 				<LandingIntro />
 				<LandingPageButtons />

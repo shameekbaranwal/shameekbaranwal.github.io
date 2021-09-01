@@ -62,7 +62,7 @@
 
 	.typing::after {
 		display: inline;
-		content: ' |';
+		content: '|';
 		position: relative;
 		animation: blink 1s ease infinite;
 		font-size: 1.25em;
@@ -72,5 +72,9 @@
 		40% {
 			opacity: 0;
 		}
+	}
+
+	html {
+		scroll-behavior: smooth;
 	}
 }

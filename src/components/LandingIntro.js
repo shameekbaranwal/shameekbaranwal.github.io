@@ -20,7 +20,7 @@ export function LandingIntro() {
 				className='font-thin text-center text-2xl mb-2'
 				// flex justify-center items-center flex-col h-20
 			>
-				<p className='typing'>{'  ' + typedText}</p>
+				<p className='typing'>{' ' + typedText}</p>
 			</div>
 		</div>
 	);

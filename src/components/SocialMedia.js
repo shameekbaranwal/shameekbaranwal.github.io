@@ -1,45 +1,38 @@
 import React from 'react';
 
-import github from '../assets/github.png';
-import instagram from '../assets/instagram.png';
-import fiverr from '../assets/fiverr.png';
-import linkedin from '../assets/linkedin.png';
+import gmail from '../assets/social/gmail.png';
+import github from '../assets/social/github.png';
+import fiverr from '../assets/social/fiverr.png';
+import linkedin from '../assets/social/linkedin.png';
+import SocialIcon from './SocialIcon.js';
 
-export default function SocialMedia() {
+export default function SocialMedia({ closeNavBar }) {
 	return (
-		<div className='flex w-screen justify-around items-center mt-6 px-24'>
-			<a
+		<div className='flex w-screen justify-around items-center gap-x-1 mt-6 px-20'>
+			<SocialIcon
+				icon={github}
+				alt='GitHub'
+				closeNavBar={closeNavBar}
 				href='https://github.com/shameekbaranwal'
-				target='_blank'
-				className='w-1/7 hover:opacity-20 transition duration-100 ease-in'
-				rel='noopener noreferrer'
-			>
-				<img src={github} className='w-full' alt='Github' />
-			</a>
-			<a
+			/>
+			<SocialIcon
+				icon={fiverr}
+				alt='Fiverr'
+				closeNavBar={closeNavBar}
 				href='https://fiverr.com/shameekbaranwal'
-				target='_blank'
-				className='w-1/7 hover:opacity-20 transition duration-100 ease-in'
-				rel='noopener noreferrer'
-			>
-				<img src={fiverr} className='w-full' alt='Fiverr' />
-			</a>
-			<a
+			/>
+			<SocialIcon
+				icon={linkedin}
+				alt='LinkedIn'
+				closeNavBar={closeNavBar}
 				href='https://linkedin.com/in/shameekbaranwal'
-				target='_blank'
-				className='w-1/7 hover:opacity-20 transition duration-100 ease-in'
-				rel='noopener noreferrer'
-			>
-				<img src={linkedin} className='w-full' alt='LinkedIn' />
-			</a>
-			<a
-				href='https://instagram.com/shameekbaranwal'
-				target='_blank'
-				className='w-1/7 hover:opacity-20 transition duration-100 ease-in'
-				rel='noopener noreferrer'
-			>
-				<img src={instagram} className='w-full' alt='Instagram' />
-			</a>
+			/>
+			<SocialIcon
+				icon={gmail}
+				alt='Mail'
+				closeNavBar={closeNavBar}
+				href='mailto:shameekbaranwal@gmail.com'
+			/>
 		</div>
 	);
 }
