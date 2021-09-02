@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTypedText } from '../hooks/useTypedText.js';
+import { useTypedText } from '../../hooks/useTypedText.js';
 
 export function LandingIntro() {
 	const [typedText, showArticle] = useTypedText();

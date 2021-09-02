@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Skill from './Skill.js';
-import html from '../assets/languages/html.png';
-import css from '../assets/languages/css.png';
-import java from '../assets/languages/java.png';
-import javascript from '../assets/languages/javascript.png';
+import html from '../../assets/languages/html.png';
+import css from '../../assets/languages/css.png';
+import java from '../../assets/languages/java.png';
+import javascript from '../../assets/languages/javascript.png';
 
 export default function Languages() {
 	return (

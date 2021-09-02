@@ -9,7 +9,7 @@ export default function Skills() {
 	console.log(skillCategory);
 	return (
 		<div
-			className='flex flex-col justify-center items-center pt-28 min-h-screen'
+			className='flex flex-col justify-center items-center min-h-full'
 			id='skillset'
 		>
 			<h2 className='text-2xl font-thin text-center text-seashell'>

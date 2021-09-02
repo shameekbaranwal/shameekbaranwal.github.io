@@ -1,9 +1,9 @@
 import React from 'react';
 
-import gmail from '../assets/social/gmail.png';
-import github from '../assets/social/github.png';
-import fiverr from '../assets/social/fiverr.png';
-import linkedin from '../assets/social/linkedin.png';
+import gmail from '../../assets/social/gmail.png';
+import github from '../../assets/social/github.png';
+import fiverr from '../../assets/social/fiverr.png';
+import linkedin from '../../assets/social/linkedin.png';
 import SocialIcon from './SocialIcon.js';
 
 export default function SocialMedia({ closeNavBar }) {

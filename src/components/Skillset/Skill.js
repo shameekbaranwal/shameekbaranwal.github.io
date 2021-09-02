@@ -1,4 +1,5 @@
 import React from 'react';
+import SkillLevel from './SkillLevel.js';
 
 export default function Skill({ name, icon, experience, level }) {
 	const calculateExperienceMonths = () => {
@@ -12,7 +13,7 @@ export default function Skill({ name, icon, experience, level }) {
 	};
 
 	return (
-		<li className='text-2xl bg-seashell bg-opacity-0 h-28 flex items-center justify-center container hover:ring-0 rounded-2xl hover:bg-opacity-0 transition-all group duration-200 relative '>
+		<li className='text-2xl bg-seashell bg-opacity-0 h-28 flex items-center justify-center container hover:ring-0 rounded-2xl hover:bg-opacity-0 transition-all group duration-200 relative select-none'>
 			<img
 				src={icon}
 				alt={name}
@@ -29,9 +30,7 @@ export default function Skill({ name, icon, experience, level }) {
 				<h3 className='hidden text-center group-hover:block font-light'>
 					{name}
 				</h3>
-				<div className='hidden text-center text-sm group-hover:flex flex-row'>
-					bruh
-				</div>
+				<SkillLevel level={level} />
 			</div>
 		</li>
 	);
