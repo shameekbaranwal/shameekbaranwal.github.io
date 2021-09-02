@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function ContactForm() {
 	return (
-		<div className='text-seashell my-20 ' id='projects'>
+		<div className='text-seashell my-20 ' id='contact'>
 			<h2 className='text-2xl font-thin text-center'>Contact Form</h2>
 			<form
 				action='/#'
