@@ -2,9 +2,9 @@ import NavBar from './components/NavBar/NavBar.js';
 import Landing from './components/Hero/Landing.js';
 import Skills from './components/Skillset/Skills.js';
 import Projects from './components/Projects/Projects.js';
-import About from './components/About.js';
-import ContactForm from './components/ContactForm.js';
-import Footer from './components/Footer.js';
+import About from './components/AboutMe/About.js';
+import ContactForm from './components/ContactForm/ContactForm.js';
+import Footer from './components/Footer/Footer.js';
 import { useState } from 'react';
 
 function App() {

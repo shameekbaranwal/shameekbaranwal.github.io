@@ -46,6 +46,10 @@
 		width: 14.5%;
 	}
 
+	.bits {
+		position: relative;
+	}
+
 	.bits:after {
 		background: none repeat scroll 0 0 transparent;
 		bottom: 0;
