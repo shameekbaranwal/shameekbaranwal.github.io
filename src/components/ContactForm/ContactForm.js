@@ -4,7 +4,7 @@ export default function ContactForm() {
 	return (
 		<div className='flex justify-center items-center w-full'>
 			<div
-				className='text-richblue-900 my-20 bg-seashell px-3 md:px-7 py-5 rounded-2xl shadow-lg bg-opacity-90 mx-2 w-full max-w-lg'
+				className='text-richblue-900 my-20 bg-seashell px-4 sm:px-7 py-5 rounded-2xl shadow-lg bg-opacity-90 mx-2 w-full max-w-lg'
 				id='contact'
 			>
 				<h2 className='text-2xl font-thin text-center'>Contact Form</h2>
@@ -12,16 +12,16 @@ export default function ContactForm() {
 					action='/#'
 					className='flex flex-col justify-center items-center text-richblue-900'
 				>
-					<div className='flex flex-col md:flex-row w-auto justify-center items-center'>
+					<div className='flex flex-col sm:flex-row w-full justify-center items-center'>
 						<input
 							type='text'
 							placeholder='Name'
-							className='outline-none inline-block px-2 py-2 rounded-lg bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 md:mr-2 md:my-5 w-full hover:ring-1 focus:ring-2 focus:shadow-lg transition-all duration-200'
+							className='outline-none inline-block px-2 py-2 rounded-lg bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 sm:mr-2 sm:my-5 w-full hover:ring-1 focus:ring-2 focus:shadow-lg transition-all duration-200'
 						/>
 						<input
 							type='email'
 							placeholder='Email Address'
-							className='outline-none inline-block px-2 py-2 rounded-lg bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 md:ml-2 md:my-5 w-full hover:ring-1 focus:ring-2 focus:shadow-lg transition-all duration-200'
+							className='outline-none inline-block px-2 py-2 rounded-lg bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 sm:ml-2 sm:my-5 w-full hover:ring-1 focus:ring-2 focus:shadow-lg transition-all duration-200'
 						/>
 					</div>
 					<textarea
