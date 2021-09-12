@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
 	return (
-		<div className='text-seashell my-20' id='projects'>
+		<div className='text-seashell my-20 max-w-lg' id='about'>
 			<h2 className='text-2xl font-thin text-center'>About Me</h2>
 			<p className='font-thin text-lg text-justify px-10'>
 				I'm a motivated software developer aiming to specialize in the
@@ -16,9 +16,7 @@ export default function About() {
 				my skills as well as to learn how to work better as a
 				teamplayer.
 			</p>
-			<p className='font-light text-center mt-5'>
-				//Timeline of Experience goes here
-			</p>
+			<p className='font-light text-center mt-5'></p>
 		</div>
 	);
 }

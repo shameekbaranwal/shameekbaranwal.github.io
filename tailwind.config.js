@@ -33,14 +33,14 @@ module.exports = {
 	},
 	variants: {
 		extend: {
-			display: ['hover', 'focus'],
+			display: ['hover', 'focus', 'group-hover'],
 			ringWidth: ['hover', 'focus'],
 			fontSize: ['hover'],
 			fontWeight: ['hover'],
-			display: ['group-hover'],
 			blur: ['group-hover'],
 			width: ['group-hover'],
 			height: ['group-hover'],
+			borderRadius: ['focus', 'hover'],
 		},
 	},
 	plugins: [],
