@@ -1,7 +1,7 @@
 module.exports = {
 	purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
 	darkMode: false, // or 'media' or 'class'
-	// mode: 'jit',
+	mode: 'jit',
 	theme: {
 		extend: {
 			colors: {
@@ -33,14 +33,14 @@ module.exports = {
 	},
 	variants: {
 		extend: {
-			display: ['hover', 'focus', 'group-hover'],
-			ringWidth: ['hover', 'focus'],
-			fontSize: ['hover'],
-			fontWeight: ['hover'],
-			blur: ['group-hover'],
-			width: ['group-hover'],
-			height: ['group-hover'],
-			borderRadius: ['focus', 'hover'],
+			// display: ['hover', 'focus', 'group-hover'],
+			// ringWidth: ['hover', 'focus'],
+			// fontSize: ['hover'],
+			// fontWeight: ['hover'],
+			// blur: ['group-hover'],
+			// width: ['group-hover'],
+			// height: ['group-hover'],
+			// borderRadius: ['focus', 'hover'],
 		},
 	},
 	plugins: [],

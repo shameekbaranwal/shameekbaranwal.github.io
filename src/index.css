@@ -68,28 +68,6 @@
 		left: 0%;
 	}
 
-	.formfield {
-		position: relative;
-	}
-
-	.formfield:after {
-		background: none repeat scroll 0 0 transparent;
-		bottom: 0;
-		content: '';
-		display: block;
-		height: 1px;
-		left: 50%;
-		position: absolute;
-		transition: width 0.3s ease 0s, left 0.3s ease 0s;
-		width: 0;
-		@apply bg-richblue-700;
-	}
-
-	.formfield:hover:after {
-		width: 100%;
-		left: 0%;
-	}
-
 	.typing {
 		position: relative;
 		display: inline;
@@ -122,5 +100,17 @@
 		to {
 			width: 100%;
 		}
+	}
+
+	.formfield {
+		@apply outline-none inline-block px-2 py-2 focus:rounded-md bg-gray-200 placeholder-richblue-200 my-2 sm:my-5 w-full border-gray-400 border-b focus:border-richblue-600 hover:rounded-md hover:shadow-md focus:shadow-md transition-all duration-200 placeholder-opacity-0
+	}
+
+	.formlabel {
+		@apply absolute cursor-text left-0 sm:left-1 top-0 sm:top-2 text-xs font-light text-gray-600 peer-placeholder-shown:top-6 peer-placeholder-shown:left-1.5 sm:peer-placeholder-shown:top-8 sm:peer-placeholder-shown:left-2.5 peer-focus-within:left-0 peer-focus-within:top-0 sm:peer-focus-within:top-2 sm:peer-focus-within:left-1 peer-focus-within:text-xs peer-placeholder-shown:text-sm transition-all
+	}
+
+	.messagelabel {
+		@apply absolute cursor-text left-1.5 -top-1.5 text-xs font-light text-gray-600 peer-placeholder-shown:top-4 peer-placeholder-shown:left-1.5 peer-focus-within:left-1.5 peer-focus-within:-top-1.5 peer-placeholder-shown:text-sm peer-focus-within:text-xs transition-all
 	}
 }

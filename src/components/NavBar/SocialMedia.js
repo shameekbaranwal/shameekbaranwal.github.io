@@ -8,7 +8,7 @@ import SocialIcon from './SocialIcon.js';
 
 export default function SocialMedia({ closeNavBar }) {
 	return (
-		<div className='flex w-screen justify-around items-center gap-x-1 mt-6 px-20'>
+		<div className='flex w-full justify-around items-center gap-x-1 mt-6 px-20'>
 			<SocialIcon
 				icon={github}
 				alt='GitHub'
