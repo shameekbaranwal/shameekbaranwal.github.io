@@ -19,7 +19,7 @@ export default function ContactForm() {
 							id='name'
 							type='text'
 							placeholder='Name'
-							className='peer outline-none inline-block px-2 py-2 focus:rounded-md bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 sm:mr-2 sm:my-5 w-full border-gray-400 border-b focus:border-richblue-600 hover:rounded-md hover:shadow-lg focus:shadow-lg transition-all duration-200'
+							className='peer outline-none inline-block px-2 py-2 focus:rounded-md bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 sm:mr-2 sm:my-5 w-full border-gray-400 border-b focus:border-richblue-600 hover:rounded-md hover:shadow-md focus:shadow-lg transition-all duration-200'
 						/>
 						{/* <label
 							htmlFor='name'
@@ -31,14 +31,14 @@ export default function ContactForm() {
 							id='email'
 							type='email'
 							placeholder='Email Address'
-							className='outline-none inline-block px-2 py-2 focus:rounded bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 sm:ml-2 sm:my-5 w-full border-gray-400 border-b focus:border-richblue-600 focus:shadow-lg transition-all duration-200'
+							className='outline-none inline-block px-2 py-2 focus:rounded bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 sm:ml-2 sm:my-5 w-full border-gray-400 border-b focus:border-richblue-600 hover:rounded-md hover:shadow-md focus:shadow-lg transition-all duration-200'
 						/>
 					</div>
 					<textarea
 						id='message'
 						type='text'
 						placeholder='Message'
-						className='outline-none inline-block px-2 py-2 focus:rounded bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 h-40 w-full border-gray-400 border-b focus:border-richblue-600 focus:shadow-md transition-all duration-200'
+						className='outline-none inline-block px-2 py-2 focus:rounded bg-gray-200 placeholder-richblue-200 placeholder-opacity-40 my-2 h-40 w-full border-gray-400 border-b focus:border-richblue-600 hover:rounded-md hover:shadow-md focus:shadow-md transition-all duration-200'
 					/>
 					<button
 						type='submit'
