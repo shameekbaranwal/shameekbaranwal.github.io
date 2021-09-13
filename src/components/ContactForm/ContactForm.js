@@ -62,7 +62,7 @@ export default function ContactForm() {
 					</div>
 					<button
 						type='submit'
-						className='bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8'
+						className='outline-none bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8'
 						onClick={e => {
 							e.preventDefault();
 						}}
