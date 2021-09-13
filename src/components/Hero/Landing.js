@@ -6,7 +6,7 @@ import { LandingPageButtons } from './LandingPageButtons';
 
 export default function Landing() {
 	return (
-		<div className='w-screen flex flex-col-reverse sm:flex-row justify-center items-center text-seashell min-h-96 pt-24 py-48'>
+		<div className='w-screen flex flex-col-reverse sm:flex-row justify-center items-center text-seashell min-h-96 pt-24 py-48 z-[1]'>
 			<div>
 				<LandingIntro />
 				<LandingPageButtons />

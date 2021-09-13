@@ -29,6 +29,9 @@ module.exports = {
 				},
 				imperialRed: '#FF192F',
 			},
+			blur: {
+				xs: '1px',
+			},
 		},
 	},
 	variants: {
