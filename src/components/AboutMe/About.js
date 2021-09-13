@@ -2,9 +2,11 @@ import React from 'react';
 
 export default function About() {
 	return (
-		<div className='text-seashell my-20 max-w-xl' id='about'>
-			<h2 className='text-2xl font-thin text-center'>About Me</h2>
-			<p className='font-thin text-lg text-justify px-10'>
+		<div className='text-seashell my-20 max-w-2xl' id='about'>
+			<h2 className='text-3xl font-light text-center mb-6 font-Montserrat text-seashell'>
+				About Me
+			</h2>
+			<p className='font-thin text-xl text-justify px-10'>
 				I'm a motivated software developer aiming to specialize in the
 				field of{' '}
 				<strong className='font-light'>

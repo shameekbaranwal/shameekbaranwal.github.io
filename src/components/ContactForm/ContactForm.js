@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SocialMedia from '../NavBar/SocialMedia.js'
+import SocialMedia from '../NavBar/SocialMedia.js';
 
 export default function ContactForm() {
 	return (
@@ -9,7 +9,7 @@ export default function ContactForm() {
 				className='text-richblue-900 my-20 bg-gray-200 px-4 sm:px-7 py-5 rounded-2xl shadow-lg mx-2 w-full max-w-lg'
 				id='contact'
 			>
-				<h2 className='text-2xl font-light text-richblue-400 text-center mb-2'>
+				<h2 className='text-3xl font-regular text-center mb-6 font-Montserrat text-richblue-400'>
 					Get in Touch
 				</h2>
 				<form
@@ -17,7 +17,7 @@ export default function ContactForm() {
 					className='flex flex-col justify-center items-center text-richblue-900'
 				>
 					<div className='flex relative flex-col sm:gap-x-1 sm:flex-row w-full justify-center items-center'>
-						<div className="w-full relative">
+						<div className='w-full relative'>
 							<input
 								id='name'
 								type='text'
@@ -31,7 +31,7 @@ export default function ContactForm() {
 								Name
 							</label>
 						</div>
-						<div className="w-full relative">
+						<div className='w-full relative'>
 							<input
 								id='email'
 								type='email'
@@ -46,7 +46,7 @@ export default function ContactForm() {
 							</label>
 						</div>
 					</div>
-					<div className="w-full relative">
+					<div className='w-full relative'>
 						<textarea
 							id='message'
 							type='text'
@@ -70,9 +70,11 @@ export default function ContactForm() {
 						Submit
 					</button>
 				</form>
-				<div className="w-full">
-					<p className="text-center font-light">You can also find me on </p>
-					<SocialMedia/>
+				<div className='w-full'>
+					<p className='text-center font-light'>
+						You can also find me on{' '}
+					</p>
+					<SocialMedia />
 				</div>
 			</div>
 		</div>
