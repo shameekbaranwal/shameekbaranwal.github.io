@@ -9,7 +9,7 @@ export default function Skills() {
 
 	return (
 		<div
-			className='flex flex-col justify-center items-center min-h-full w-full'
+			className='flex flex-col justify-center items-center min-h-full w-full z-[1]'
 			id='skillset'
 		>
 			<h2 className='text-3xl font-light text-center mb-6 font-Montserrat text-seashell'>

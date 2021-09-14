@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Projects() {
 	return (
-		<div className='text-seashell my-20' id='projects'>
+		<div className='text-seashell my-20 z-[1]' id='projects'>
 			<h2 className='text-3xl font-light text-center mb-6 font-Montserrat'>
 				Projects
 			</h2>

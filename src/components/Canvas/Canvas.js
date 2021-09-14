@@ -3,33 +3,28 @@ import Particles from 'react-particles-js';
 
 export default function Canvas() {
 	return (
-		<Particles
-			className='absolute inset-0'
-			params={{
-				particles: {
-					number: {
-						value: 100,
-					},
-					size: {
-						value: 2.5,
-					},
-					move: {
-						speed: 1.8,
-					},
-				},
-				interactivity: {
-					events: {
-						onhover: {
-							enable: true,
-							mode: 'repulse',
+		// <div className='border-2 fixed inset-0 h-screen'>
+		// 	<div className='relative w-screen h-screen'>
+		<div className='fixed inset-0 top-24 w-screen h-full'>
+			<Particles
+				className='h-full'
+				params={{
+					particles: {
+						number: {
+							density: { enable: true, value_area: 1200 },
+							// value: 20,
 						},
-						onclick: {
-							enable: true,
-							mode: 'attract',
+						size: {
+							value: 2,
+						},
+						move: {
+							speed: 1,
 						},
 					},
-				},
-			}}
-		/>
+				}}
+			/>
+		</div>
+		// 	</div>
+		// </div>
 	);
 }
