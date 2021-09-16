@@ -9,7 +9,7 @@ export default function Logo({ className }) {
 	return (
 		<>
 			<a
-				className={`w-20 my-3 bg-gradient-to-b from-turq-700 via-turq-300 to-turq-700 text-transparent bg-clip-text ${className}`}
+				className={`w-20 my-3 bg-gradient-to-b from-turq-700 via-turq-300 to-turq-700 text-transparent bg-clip-text ${className} xl:ml-5`}
 				href='/#'
 			>
 				<h1 className='text-transparent text-5xl xl:text-6xl text-center font-Montserrat'>
