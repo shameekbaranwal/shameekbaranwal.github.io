@@ -6,7 +6,7 @@ import { LandingPageButtons } from './LandingPageButtons';
 
 export default function Landing() {
 	return (
-		<div className='w-screen h-screen flex justify-center items-center text-seashell min-h-96 pt-24 py-48 z-[1]'>
+		<div className='w-screen h-screen flex justify-center items-center text-seashell min-h-96 pt-0 pb-48 z-[1]'>
 			<div>
 				<LandingIntro />
 				<LandingPageButtons />

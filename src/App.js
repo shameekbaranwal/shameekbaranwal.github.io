@@ -15,7 +15,7 @@ function App() {
 		<>
 			<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen overflow-hidden'>
 				<NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
-				<div className='flex flex-col justify-center items-center pt-24 relative'>
+				<div className='flex flex-col justify-center items-center pt-24 relative max-h-full'>
 					<Landing />
 					<Skills />
 					<Projects />
