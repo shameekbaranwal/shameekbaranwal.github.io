@@ -4,19 +4,19 @@ import pfp from '../../assets/social/dp.png';
 
 export default function About() {
 	return (
-		<div className='text-seashell my-20 z-[1]' id='about'>
+		<div className='text-seashell my-20 z-[1] w-full max-w-7xl' id='about'>
 			<h2 className='text-3xl font-light text-center mb-6 font-Montserrat text-seashell'>
 				About Me
 			</h2>
-			<div className='w-full flex flex-col md:flex-row items-center justify-center'>
-				<div className='object-contain w-32 h-32 md:w-48 md:h-48 mb-8'>
+			<div className='w-full flex flex-col md:flex-row items-center justify-center '>
+				<div className='object-contain w-32 h-32 md:w-48 md:h-48 mb-8 md:mb-0'>
 					<img
 						src={pfp}
 						alt='profile pic'
 						className='rounded-full w-full h-full'
 					/>
 				</div>
-				<p className='font-thin text-lg text-justify px-10 max-w-lg'>
+				<p className='font-thin text-lg text-justify px-10 max-w-xl xl:max-w-2xl xl:text-xl'>
 					I'm a motivated software developer aiming to specialize in
 					the field of{' '}
 					<strong className='font-light'>
@@ -26,7 +26,11 @@ export default function About() {
 					real-world enterprise projects. I am currently pursuing my{' '}
 					<strong className='font-light'>
 						B.E. in Computer Science Engineering at{' '}
-						<a href='https://bits-pilani.ac.in' className='bits'>
+						<a
+							href='https://bits-pilani.ac.in'
+							className='bits'
+							target='_blank'
+						>
 							BITS Pilani
 						</a>
 					</strong>
@@ -35,7 +39,7 @@ export default function About() {
 					how to work better as a teamplayer.
 				</p>
 			</div>
-			<p className='font-light text-center mt-5'></p>
+			<p className='font-light text-center'></p>
 		</div>
 	);
 }

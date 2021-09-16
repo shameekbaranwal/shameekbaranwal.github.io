@@ -5,7 +5,7 @@ import Languages from './Languages.js';
 import Tools from './Tools.js';
 
 export default function Skills() {
-	const [skillCategory, setSkillCategory] = useState('Languages');
+	const [skillCategory, setSkillCategory] = useState('Tools');
 
 	return (
 		<div
@@ -18,16 +18,6 @@ export default function Skills() {
 			<div className='flex flex-row justify-center items-center w-screen max-w-xl text-seashell text-xl mt-4 sticky top-0 h-20 px-4 sm:px-2'>
 				<button
 					className={`w-full rounded-lg mx-1 my-auto py-2 text-center hover:bg-richblue-200 font-thin transition-all cursor-pointer duration-200 focus:bg-richblue-100 hover:text-2xl outline-none ${
-						skillCategory === 'Languages'
-							? 'bg-richblue-100'
-							: 'bg-richblue-400 '
-					}`}
-					onClick={() => setSkillCategory('Languages')}
-				>
-					Languages
-				</button>
-				<button
-					className={`w-full rounded-lg mx-1 my-auto py-2 text-center hover:bg-richblue-200 font-thin transition-all cursor-pointer duration-200 focus:bg-richblue-100 hover:text-2xl outline-none ${
 						skillCategory === 'Tools'
 							? 'bg-richblue-100'
 							: 'bg-richblue-400'
@@ -35,6 +25,16 @@ export default function Skills() {
 					onClick={() => setSkillCategory('Tools')}
 				>
 					Tools
+				</button>
+				<button
+					className={`w-full rounded-lg mx-1 my-auto py-2 text-center hover:bg-richblue-200 font-thin transition-all cursor-pointer duration-200 focus:bg-richblue-100 hover:text-2xl outline-none ${
+						skillCategory === 'Languages'
+							? 'bg-richblue-100'
+							: 'bg-richblue-400 '
+					}`}
+					onClick={() => setSkillCategory('Languages')}
+				>
+					Languages
 				</button>
 			</div>
 			<ul
