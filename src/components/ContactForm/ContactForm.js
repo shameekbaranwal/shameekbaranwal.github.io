@@ -4,7 +4,10 @@ import SocialMedia from '../NavBar/SocialMedia.js';
 
 export default function ContactForm() {
 	return (
-		<div className='flex justify-center items-center w-full z-[1]'>
+		<div
+			className='flex justify-center items-center w-full z-[1]'
+			data-aos='fade-up'
+		>
 			<div
 				className='text-richblue-900 my-20 bg-gray-200 px-4 sm:px-7 py-5 rounded-2xl shadow-lg mx-2 w-full max-w-lg bg-opacity-90'
 				id='contact'

@@ -13,7 +13,11 @@ export default function Skill({ name, icon, experience, level }) {
 	};
 
 	return (
-		<li className='text-2xl bg-seashell bg-opacity-0 h-28 flex items-center justify-center container hover:ring-0 rounded-2xl hover:bg-opacity-0 transition-all group duration-200 relative select-none'>
+		<li
+			data-aos='fade-up'
+			data-aos-easing='ease-out'
+			className='text-2xl bg-seashell bg-opacity-0 h-28 flex items-center justify-center container hover:ring-0 rounded-2xl hover:bg-opacity-0 transition-all group duration-200 relative select-none'
+		>
 			<img
 				src={icon}
 				alt={name}

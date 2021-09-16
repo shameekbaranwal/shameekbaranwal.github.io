@@ -15,7 +15,7 @@ export default function Canvas() {
 							},
 						},
 						size: {
-							value: 2.4,
+							value: 2.7,
 							random: true,
 						},
 						move: {

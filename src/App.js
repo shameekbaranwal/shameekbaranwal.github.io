@@ -5,17 +5,23 @@ import Projects from './components/Projects/Projects.js';
 import About from './components/AboutMe/About.js';
 import ContactForm from './components/ContactForm/ContactForm.js';
 import Footer from './components/Footer/Footer.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Canvas from './components/Canvas/Canvas.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
 	const [isOpen, setIsOpen] = useState(false);
+
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
 	return (
 		<>
 			<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen overflow-hidden'>
 				<NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
-				<div className='flex flex-col justify-center items-center pt-24 relative max-h-full'>
+				<div className='flex flex-col justify-center items-center relative max-h-full'>
 					<Landing />
 					<Skills />
 					<Projects />

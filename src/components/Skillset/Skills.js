@@ -9,6 +9,7 @@ export default function Skills() {
 
 	return (
 		<div
+			data-aos='fade-up'
 			className='flex flex-col justify-center items-center min-h-full w-full z-[1]'
 			id='skillset'
 		>
