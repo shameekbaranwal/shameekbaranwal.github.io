@@ -49,3 +49,9 @@ export default function About() {
 		</div>
 	);
 }
+
+// Highlights:
+// 1) COFAS
+// 2) 97.25%
+// 3) Fiverr 5*
+// 4) Secured internship at KEF + Received LOR
