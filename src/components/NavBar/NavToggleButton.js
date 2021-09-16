@@ -5,6 +5,7 @@ export default function NavToggleButton({ setIsOpen, isOpen }) {
 		<button
 			className='absolute right-8 flex sm:hidden flex-col items-center justify-center w-12 h-8 px-2 group hover:shadow-2xl'
 			onClick={() => setIsOpen(!isOpen)}
+			aria-label='Toggle Navigation'
 		>
 			<div
 				className={`transition-all duration-300 bg-white w-full h-0.5 mb-2 group-hover:bg-turq-300 origin-center

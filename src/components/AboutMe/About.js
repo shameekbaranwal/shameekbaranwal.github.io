@@ -30,6 +30,7 @@ export default function About() {
 							href='https://bits-pilani.ac.in'
 							className='bits'
 							target='_blank'
+							rel='noopener noreferrer'
 						>
 							BITS Pilani
 						</a>

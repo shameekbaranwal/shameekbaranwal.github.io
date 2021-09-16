@@ -6,7 +6,7 @@ export default function ContactForm() {
 	return (
 		<div className='flex justify-center items-center w-full z-[1]'>
 			<div
-				className='text-richblue-900 my-20 bg-gray-200 px-4 sm:px-7 py-5 rounded-2xl shadow-lg mx-2 w-full max-w-lg'
+				className='text-richblue-900 my-20 bg-gray-200 px-4 sm:px-7 py-5 rounded-2xl shadow-lg mx-2 w-full max-w-lg bg-opacity-90'
 				id='contact'
 			>
 				<h2 className='text-3xl font-regular text-center mb-6 font-Montserrat text-richblue-400'>
