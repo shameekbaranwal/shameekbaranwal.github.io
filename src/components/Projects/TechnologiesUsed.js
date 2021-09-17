@@ -1,0 +1,103 @@
+import Technology from './Technology.js';
+
+import React from '../../assets/tools/react.png';
+import Tailwind from '../../assets/tools/tailwind.png';
+import ReactRouter from '../../assets/tools/react-router.png';
+import Formik from '../../assets/tools/formik.png';
+import Sheets from '../../assets/tools/sheets.png';
+import ReactNative from '../../assets/tools/react native.png';
+import Expo from '../../assets/tools/expo.png';
+import Node from '../../assets/tools/node.png';
+import Express from '../../assets/tools/express.png';
+import p5 from '../../assets/tools/p5.png';
+import HTML from '../../assets/languages/html.png';
+import CSS from '../../assets/languages/css.png';
+import JavaScript from '../../assets/languages/javascript.png';
+
+export default function TechnologiesUsed({ technologies }) {
+	const details = {
+		react: {
+			name: 'React',
+			image: React,
+		},
+		tailwind: {
+			name: 'Tailwind',
+			image: Tailwind,
+		},
+		reactrouter: {
+			name: 'React Router',
+			image: ReactRouter,
+		},
+		formik: {
+			name: 'Formik',
+			image: Formik,
+		},
+		sheets: {
+			name: 'Sheets API',
+			image: Sheets,
+		},
+		reactnative: {
+			name: 'React Native',
+			image: ReactNative,
+		},
+		expo: {
+			name: 'Expo',
+			image: Expo,
+		},
+		node: {
+			name: 'Node',
+			image: Node,
+		},
+		express: {
+			name: 'Express',
+			image: Express,
+		},
+		p5: {
+			name: 'p5.js',
+			image: p5,
+		},
+		html: {
+			name: 'HTML',
+			image: HTML,
+		},
+		css: {
+			name: 'CSS',
+			image: CSS,
+		},
+		js: {
+			name: 'JavaScript',
+			image: JavaScript,
+		},
+	};
+
+	return (
+		<div className='flex flex-col justify-center items-center mx-6 font-thin'>
+			{/*<p>Technologies Used</p>*/}
+			<ul className='flex justify-around items-center w-full px-4'>
+				{technologies.map(tech => (
+					<Technology details={details[tech]} />
+				))}
+			</ul>
+		</div>
+	);
+}
+
+// React
+// Tailwind
+// React Router *
+
+// React Native
+// Expo
+// Formik *
+// Node
+// Express
+// Sheets *
+
+// HTML5
+// CSS3
+// JavaScript
+// p5.js
+
+// HTML5
+// CSS3
+// JavaScript

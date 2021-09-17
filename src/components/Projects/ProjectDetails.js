@@ -5,7 +5,7 @@ export default function ProjectDetails() {
 
 	return (
 		<div
-			className={`overflow-hidden my-8 transition-all flex flex-col justify-center items-center duration-250`}
+			className={`overflow-hidden mt-8 transition-all flex flex-col justify-center items-center duration-250`}
 		>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
@@ -45,8 +45,6 @@ export default function ProjectDetails() {
 					Tailwind, Routing, and modern React fundamentals.
 				</li>
 			</ul>
-			{/* )} */}
 		</div>
-		// ) : (
 	);
 }
