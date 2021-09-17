@@ -14,64 +14,67 @@ import HTML from '../../assets/languages/html.png';
 import CSS from '../../assets/languages/css.png';
 import JavaScript from '../../assets/languages/javascript.png';
 
-export default function TechnologiesUsed({ technologies }) {
-	const details = {
-		react: {
-			name: 'React',
-			image: React,
-		},
-		tailwind: {
-			name: 'Tailwind',
-			image: Tailwind,
-		},
-		reactrouter: {
-			name: 'React Router',
-			image: ReactRouter,
-		},
-		formik: {
-			name: 'Formik',
-			image: Formik,
-		},
-		sheets: {
-			name: 'Sheets API',
-			image: Sheets,
-		},
-		reactnative: {
-			name: 'React Native',
-			image: ReactNative,
-		},
-		expo: {
-			name: 'Expo',
-			image: Expo,
-		},
-		node: {
-			name: 'Node',
-			image: Node,
-		},
-		express: {
-			name: 'Express',
-			image: Express,
-		},
-		p5: {
-			name: 'p5.js',
-			image: p5,
-		},
-		html: {
-			name: 'HTML',
-			image: HTML,
-		},
-		css: {
-			name: 'CSS',
-			image: CSS,
-		},
-		js: {
-			name: 'JavaScript',
-			image: JavaScript,
-		},
-	};
+const details = {
+	react: {
+		name: 'React',
+		image: React,
+	},
+	tailwind: {
+		name: 'Tailwind',
+		image: Tailwind,
+	},
+	reactrouter: {
+		name: 'React Router',
+		image: ReactRouter,
+	},
+	formik: {
+		name: 'Formik',
+		image: Formik,
+	},
+	sheets: {
+		name: 'Sheets API',
+		image: Sheets,
+	},
+	reactnative: {
+		name: 'React Native',
+		image: ReactNative,
+	},
+	expo: {
+		name: 'Expo',
+		image: Expo,
+	},
+	node: {
+		name: 'Node',
+		image: Node,
+	},
+	express: {
+		name: 'Express',
+		image: Express,
+	},
+	p5: {
+		name: 'p5.js',
+		image: p5,
+	},
+	html: {
+		name: 'HTML',
+		image: HTML,
+	},
+	css: {
+		name: 'CSS',
+		image: CSS,
+	},
+	js: {
+		name: 'JavaScript',
+		image: JavaScript,
+	},
+};
 
+export default function TechnologiesUsed({ technologies }) {
 	return (
-		<div className='flex flex-col justify-center items-center mx-6 font-thin'>
+		<div
+			className='flex flex-col justify-center items-center mx-6 font-thin'
+			data-aos='fade-up'
+		>
 			{/*<p>Technologies Used</p>*/}
 			<ul className='flex justify-around items-center w-full px-4'>
 				{technologies.map(tech => (

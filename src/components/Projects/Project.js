@@ -7,15 +7,18 @@ import TechnologiesUsed from './TechnologiesUsed.js';
 
 export default function Project({ title }) {
 	return (
-		<li
-			className='mt-10 flex flex-col justify-center items-center h-full mb-40 min-h-full'
-			data-aos='fade-up'
-		>
-			<div className='w-full h-full rounded-xl'>
-				<h3 className='text-3xl text-center font-Montserrat font-semibold text-seashell'>
+		<li className='mt-10 flex flex-col justify-center items-center h-full mb-40 min-h-full'>
+			<div className='w-full h-full rounded-xl' data-aos='fade-up'>
+				<h3
+					className='text-3xl text-center font-Montserrat font-semibold text-seashell'
+					data-aos='fade-up'
+				>
 					{title}
 				</h3>
-				<div className='w-full px-4 h-auto container mx-auto'>
+				<div
+					className='w-full px-4 h-auto container mx-auto'
+					data-aos='fade-up'
+				>
 					<img
 						src={AdoptMePC}
 						alt='Adopt Me PC'
@@ -31,7 +34,10 @@ export default function Project({ title }) {
 				<TechnologiesUsed
 					technologies={['react', 'tailwind', 'reactrouter']}
 				/>
-				<div className='flex flex-row justify-center items-center mt-8 gap-x-8'>
+				<div
+					className='flex flex-row justify-center items-center mt-16 gap-x-8'
+					data-aos='fade-up'
+				>
 					<button className=''>
 						<a
 							className='transition-all duration-200 border-2 border-turq-600 bg-turq-600 px-3 py-2 mx-2 text-richblue-800 hover:bg-opacity-10 hover:border-seashell hover:border-opacity-20 hover:text-seashell rounded-md font-light hover:font-medium hover:text-lg'

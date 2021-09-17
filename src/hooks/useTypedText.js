@@ -4,6 +4,7 @@ export const useTypedText = () => {
 	const texts = [
 		'Shameek Kumar Baranwal',
 		'Front-End Web Developer',
+		'App Developer',
 		'Freelancer',
 		'Computer Science Sophomore at BITS Pilani',
 	];
@@ -19,7 +20,7 @@ export const useTypedText = () => {
 			} else {
 				setTimeout(() => {
 					setVisibleChars(0);
-					setIndex((index + 1) % 4);
+					setIndex((index + 1) % 5);
 				}, 2500);
 			}
 
@@ -30,5 +31,5 @@ export const useTypedText = () => {
 	}, [visibleChars, index]);
 
 	//the second returned value is a boolean that determines whether to say "Hi, I'm" or "Hi, I'm a" in the text above the typed text.
-	return [typedText, index === 0];
+	return [typedText, index !== 0, index === 2];
 };

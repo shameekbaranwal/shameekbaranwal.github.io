@@ -6,10 +6,11 @@ export default function ProjectDetails() {
 	return (
 		<div
 			className={`overflow-hidden mt-8 transition-all flex flex-col justify-center items-center duration-250`}
+			data-aos='fade-up'
 		>
 			<svg
 				xmlns='http://www.w3.org/2000/svg'
-				className={`h-6 w-6 hover:scale-150 hover:animate-pulse cursor-pointer transition-all duration-250 ${
+				className={`h-6 w-6 hover:scale-150 animate-pulse cursor-pointer transition-all duration-250 ${
 					isOpen && 'transform rotate-180'
 				}`}
 				fill='none'
