@@ -74,7 +74,6 @@ export default function ContactForm() {
 						onClick={e => {
 							e.preventDefault();
 						}}
-						data-aos='fade-up'
 					>
 						Submit
 					</button>
