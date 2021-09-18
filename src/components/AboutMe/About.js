@@ -49,7 +49,7 @@ export default function About() {
 					</p>
 				</div>
 				<div
-					className='bg-gray-300 bg-opacity-10 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur shadow-xl mx-10 max-w-md hover:bg-opacity-5 transition duration-200'
+					className='transition-all duration-200 bg-gray-300 bg-opacity-10 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur shadow-xl mx-10 max-w-md hover:bg-opacity-5'
 					data-aos='fade-up'
 				>
 					<h3 className='text-xl text-center font-extralight'>
@@ -70,7 +70,11 @@ export default function About() {
 						</li>
 						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
 							Maintained a constant ⭐⭐⭐⭐⭐ rating across all
-							gigs.
+							gigs on{' '}
+							<ExternalLink href='https://fiverr.com/shameekbaranwal'>
+								Fiverr
+							</ExternalLink>
+							.
 						</li>
 						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
 							Received a{' '}
