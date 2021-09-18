@@ -1,6 +1,7 @@
 import React from 'react';
 
 import SocialMedia from '../NavBar/SocialMedia.js';
+import Form from './Form';
 
 export default function ContactForm() {
 	return (
@@ -19,65 +20,7 @@ export default function ContactForm() {
 				>
 					Get in Touch
 				</h2>
-				<form
-					action='/#'
-					className='flex flex-col justify-center items-center text-richblue-900'
-					data-aos='fade-up'
-				>
-					<div className='flex relative flex-col sm:gap-x-1 sm:flex-row w-full justify-center items-center'>
-						<div className='w-full relative' data-aos='fade-up'>
-							<input
-								id='name'
-								type='text'
-								placeholder=' '
-								className='formfield peer'
-							/>
-							<label
-								htmlFor='name'
-								className='formlabel peer-placeholder-shown:text-md duration-800'
-							>
-								Name
-							</label>
-						</div>
-						<div className='w-full relative' data-aos='fade-up'>
-							<input
-								id='email'
-								type='email'
-								placeholder=' '
-								className='formfield peer'
-							/>
-							<label
-								htmlFor='email'
-								className='formlabel peer-placeholder-shown:text-md duration-800'
-							>
-								Email Address
-							</label>
-						</div>
-					</div>
-					<div className='w-full relative' data-aos='fade-up'>
-						<textarea
-							id='message'
-							type='text'
-							placeholder=' '
-							className='formfield peer sm:my-2 h-40'
-						/>
-						<label
-							htmlFor='message'
-							className='messagelabel peer-placeholder-shown:text-md duration-800'
-						>
-							Message
-						</label>
-					</div>
-					<button
-						type='submit'
-						className='outline-none bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8'
-						onClick={e => {
-							e.preventDefault();
-						}}
-					>
-						Submit
-					</button>
-				</form>
+				<Form />
 				<div className='w-full'>
 					<p className='text-center font-light'>
 						You can also find me on{' '}

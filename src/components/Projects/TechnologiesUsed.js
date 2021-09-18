@@ -78,7 +78,10 @@ export default function TechnologiesUsed({ technologies }) {
 			{/*<p>Technologies Used</p>*/}
 			<ul className='flex justify-around items-center w-full px-4 max-w-lg'>
 				{technologies.map(tech => (
-					<Technology details={details[tech]} />
+					<Technology
+						details={details[tech]}
+						key={details[tech].name}
+					/>
 				))}
 			</ul>
 		</div>
