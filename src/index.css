@@ -144,7 +144,7 @@
 	}
 
 	.kef-img-1 {
-		@apply blur-none mt-5 w-auto h-40 object-cover rounded-md absolute opacity-100 -left-5 -top-8;
+		@apply blur-none mt-5 w-auto h-40 sm:h-60 md:h-72 object-cover rounded-md absolute opacity-100 -left-5 -top-8;
 		transform: translateZ(5px);
 		transition: all 0.5s;
 	}
@@ -155,7 +155,7 @@
 	}
 
 	.kef-img-2 {
-		@apply mt-5 object-cover w-auto h-40 rounded-md opacity-30 top-0;
+		@apply mt-5 object-cover w-auto h-40 sm:h-60 md:h-72 rounded-md opacity-30 top-0;
 		transition: all 0.5s;
 	}
 

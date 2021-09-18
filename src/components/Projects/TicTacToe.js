@@ -13,10 +13,10 @@ export default function KEF() {
 
 	const image = (
 		<div
-			className='w-full px-10 h-auto container mx-auto'
+			className='px-20 h-full container mx-auto flex flex-col justify-center items-center'
 			data-aos='fade-up'
 		>
-			<div className='w-full flex justify-center items-center'>
+			<div className='flex justify-center items-center mx-auto'>
 				<div className='relative w-full px-10'>
 					<div className='tictactoe-img-container relative'>
 						<img
