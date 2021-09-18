@@ -62,6 +62,7 @@ export default function KEF() {
 			technologies={['html', 'css', 'js']}
 			live={'https://tic-tac-toe-shmk.netlify.app/'}
 			code={'https://github.com/shameekbaranwal/tic-tac-toe'}
+			position='left'
 		/>
 	);
 }

@@ -13,9 +13,14 @@ export default function Project({
 	technologies,
 	live,
 	code,
+	position,
 }) {
 	return (
-		<li className='mt-10 flex flex-col justify-center items-center h-full mb-40 min-h-full'>
+		<li
+			className={`mt-10 flex flex-col justify-center items-center h-full mb-40 min-h-full md:flex-row ${
+				position === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'
+			}`}
+		>
 			<div className='w-full h-full rounded-xl' data-aos='fade-up'>
 				<h3
 					className='text-3xl text-center font-Montserrat font-semibold text-seashell'
@@ -23,7 +28,10 @@ export default function Project({
 				>
 					{title}
 				</h3>
-				{image}
+				<div className='md:hidden'>{image}</div>
+				<p className='hidden md:block pt-4 text-center font-light text-md font-Montserrat'>
+					{caption}
+				</p>
 				<ProjectDetails details={details} />
 				<TechnologiesUsed technologies={technologies} />
 				<div
@@ -52,6 +60,7 @@ export default function Project({
 					</button>
 				</div>
 			</div>
+			<div className='hidden md:inline-block'>{image}</div>
 		</li>
 	);
 }

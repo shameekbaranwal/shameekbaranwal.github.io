@@ -13,7 +13,7 @@ export default function KEF() {
 
 	const image = (
 		<div
-			className='px-20 h-full container mx-auto flex flex-col justify-center items-center'
+			className='px-4 h-full container mx-auto flex flex-col justify-center items-center'
 			data-aos='fade-up'
 		>
 			<div className='flex justify-center items-center mx-auto'>
@@ -47,7 +47,7 @@ export default function KEF() {
 				</div>
 			</div>
 
-			<p className='text-center font-light text-md font-Montserrat'>
+			<p className='text-center font-light text-md font-Montserrat md:hidden'>
 				{caption}
 			</p>
 		</div>
@@ -68,7 +68,9 @@ export default function KEF() {
 				'formik',
 			]}
 			live={'https://bp-gc.in/kotak-refs'}
+			caption={caption}
 			code={'https://github.com/shameekbaranwal/KEF-Volunteering'}
+			position='left'
 		/>
 	);
 }

@@ -42,6 +42,7 @@ export default function Overclock() {
 			technologies={['html', 'css', 'js', 'p5']}
 			live={'https://overcl0ck.netlify.app'}
 			code={'https://github.com/shameekbaranwal/overcl0ck'}
+			position='right'
 		/>
 	);
 }

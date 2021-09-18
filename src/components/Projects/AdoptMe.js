@@ -43,6 +43,7 @@ export default function AdoptMe() {
 			technologies={['react', 'tailwind', 'reactrouter']}
 			live={'https://adopt-me-web.netlify.app'}
 			code={'https://github.com/shameekbaranwal/adopt-me'}
+			position='right'
 		/>
 	);
 }
