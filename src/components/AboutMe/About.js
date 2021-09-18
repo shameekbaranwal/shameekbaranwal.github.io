@@ -5,42 +5,83 @@ import ExternalLink from '../ExternalLink.js';
 
 export default function About() {
 	return (
-		<div className='text-seashell my-20 z-[1] w-full max-w-7xl' id='about'>
+		<div
+			className='text-seashell my-20 z-[1] w-full max-w-[90rem]'
+			id='about'
+		>
 			<h2
 				data-aos='fade-up'
 				className='text-3xl font-light text-center mb-6 font-Montserrat text-seashell'
 			>
 				About Me
 			</h2>
-			<div
-				className='w-full flex flex-col md:flex-row items-center justify-center '
-				data-aos='fade-up'
-			>
-				<div className='object-contain w-32 h-32 md:w-48 md:h-48 mb-8 md:mb-0'>
-					<img
-						src={pfp}
-						alt='profile pic'
-						className='rounded-full w-full h-full'
-					/>
+			<div className='flex justify-center items-center w-full flex-col xl:flex-row'>
+				<div
+					className='w-full flex flex-col md:flex-row items-center justify-center '
+					data-aos='fade-up'
+				>
+					<div className='container w-32 h-32 md:w-48 md:h-48 mb-8 md:mb-0 flex justify-center items-center'>
+						<img
+							src={pfp}
+							alt='profile pic'
+							className='rounded-full object-contain w-full h-auto self-center'
+							loading='lazy'
+						/>
+					</div>
+					<p className='font-thin text-lg text-justify px-10 max-w-xl xl:max-w-2xl xl:text-xl'>
+						I'm a motivated software developer aiming to specialize
+						in the field of{' '}
+						<strong className='font-light'>
+							Front-End Web Development
+						</strong>{' '}
+						by doing meaningful personal projects and participating
+						in real-world enterprise projects. I am currently
+						pursuing my{' '}
+						<strong className='font-light'>
+							B.E. in Computer Science Engineering at{' '}
+							<ExternalLink href='https://bits-pilani.ac.in'>
+								BITS Pilani
+							</ExternalLink>
+						</strong>
+						, and I am looking for an experience-building internship
+						for the summer of 2022 to enhance my skills as well as
+						to learn how to work better as a teamplayer.
+					</p>
 				</div>
-				<p className='font-thin text-lg text-justify px-10 max-w-xl xl:max-w-2xl xl:text-xl'>
-					I'm a motivated software developer aiming to specialize in
-					the field of{' '}
-					<strong className='font-light'>
-						Front-End Web Development
-					</strong>{' '}
-					by doing meaningful personal projects and participating in
-					real-world enterprise projects. I am currently pursuing my{' '}
-					<strong className='font-light'>
-						B.E. in Computer Science Engineering at{' '}
-						<ExternalLink href='https://bits-pilani.ac.in'>
-							BITS Pilani
-						</ExternalLink>
-					</strong>
-					, and I am looking for an experience-building internship for
-					the summer of 2022 to enhance my skills as well as to learn
-					how to work better as a teamplayer.
-				</p>
+				<div
+					className='bg-gray-300 bg-opacity-10 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur shadow-xl mx-10 max-w-md hover:bg-opacity-5 transition duration-200'
+					data-aos='fade-up'
+				>
+					<h3 className='text-xl text-center font-extralight'>
+						Some highlights
+					</h3>
+					<ul className='mt-2'>
+						<li className='ml-6 min-w-[0ch] font-thin before:content-["⪼"] before:mr-2'>
+							Secured third rank in{' '}
+							<ExternalLink href='http://www.cmseducation.org/cofas/results.html'>
+								COFAS
+							</ExternalLink>
+							{' International Computer Olympiad - '}
+							Computer Wizard{' '}
+							<span className='font-mono'>(11/2018)</span>
+						</li>
+						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
+							Secured 97.25% in ISC Board Examinations.
+						</li>
+						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
+							Maintained a constant ⭐⭐⭐⭐⭐ rating across all
+							gigs.
+						</li>
+						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
+							Received a{' '}
+							<ExternalLink href='https://drive.google.com/file/d/1Oeq2aTYddU0l3ClYVgu3us4dZ44PC6B8/view?usp=sharing'>
+								Letter of Recommendation
+							</ExternalLink>{' '}
+							from Kotak Education Foundation at the conclusion of
+							my internship in the Summer of 2021.
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	);
