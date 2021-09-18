@@ -21,15 +21,18 @@ export default function Project({
 				position === 'right' ? 'md:flex-row' : 'md:flex-row-reverse'
 			}`}
 		>
-			<div className='w-full h-full rounded-xl' data-aos='fade-up'>
+			<div
+				className='h-full rounded-xl flex flex-col justify-center items-center'
+				data-aos='fade-up'
+			>
 				<h3
-					className='text-3xl text-center font-Montserrat font-semibold text-seashell'
+					className='text-3xl text-center inline font-Montserrat font-semibold text-seashell'
 					data-aos='fade-up'
 				>
 					{title}
 				</h3>
 				<div className='md:hidden'>{image}</div>
-				<p className='hidden md:block pt-4 maxw- text-center font-light text-md font-Montserrat'>
+				<p className='hidden md:block pt-4 mx-auto max-w-md text-center font-light text-md font-Montserrat'>
 					{caption}
 				</p>
 				<ProjectDetails details={details} />
@@ -60,7 +63,9 @@ export default function Project({
 					</button>
 				</div>
 			</div>
-			<div className='hidden md:inline-block'>{image}</div>
+			<div className='hidden md:inline-block md:w-full xl:w-3/5 2xl:w-2/5'>
+				{image}
+			</div>
 		</li>
 	);
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import SkillLevel from './SkillLevel.js';
 
-export default function Skill({ name, icon, experience, level }) {
+export default function Skill({ name, icon, experience, level, aos }) {
 	const calculateExperienceMonths = () => {
 		const now = new Date();
 		const then = experience;

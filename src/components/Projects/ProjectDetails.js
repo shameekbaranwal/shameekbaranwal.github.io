@@ -5,7 +5,7 @@ export default function ProjectDetails({ details, size }) {
 
 	return (
 		<div
-			className={`overflow-hidden my-8 transition-all flex flex-col justify-center items-center duration-250`}
+			className={`overflow-hidden my-8 transition-all flex flex-col justify-center items-center duration-250 max-w-3xl`}
 			data-aos='fade-up'
 		>
 			<svg

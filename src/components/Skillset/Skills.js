@@ -13,7 +13,10 @@ export default function Skills() {
 			className='flex flex-col justify-center items-center min-h-full w-full z-[1]'
 			id='skillset'
 		>
-			<h2 className='text-3xl font-light text-center mb-6 font-Montserrat text-seashell'>
+			<h2
+				className='text-3xl font-light text-center mb-6 font-Montserrat text-seashell'
+				data-aos='fade-up'
+			>
 				Skillset
 			</h2>
 			<div className='flex flex-row justify-center items-center w-screen max-w-xl text-seashell text-xl mt-4 sticky top-0 h-20 px-4 sm:px-2'>

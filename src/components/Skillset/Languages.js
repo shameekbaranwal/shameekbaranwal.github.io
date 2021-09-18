@@ -14,24 +14,28 @@ export default function Languages() {
 				icon={html}
 				experience={new Date('2021-02-01')}
 				level={8}
+				aos='fade-left'
 			/>
 			<Skill
 				name='CSS'
 				icon={css}
 				experience={new Date('2021-02-01')}
 				level={5}
+				aos='fade-left'
 			/>
 			<Skill
 				name='JavaScript'
 				icon={javascript}
 				experience={new Date('2021-01-01')}
 				level={8}
+				aos='fade-left'
 			/>
 			<Skill
 				name='Java'
 				icon={java}
 				experience={new Date('2021-08-23')}
 				level={5}
+				aos='fade-left'
 			/>
 			{/*<Skill name='TypeScript' />*/}
 		</>

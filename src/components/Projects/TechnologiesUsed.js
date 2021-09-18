@@ -72,11 +72,11 @@ const details = {
 export default function TechnologiesUsed({ technologies }) {
 	return (
 		<div
-			className='flex flex-col justify-center items-center mx-6 font-thin'
+			className='flex flex-col justify-center items-center mx-6 font-thin w-full'
 			data-aos='fade-up'
 		>
 			{/*<p>Technologies Used</p>*/}
-			<ul className='flex justify-around items-center w-full px-4'>
+			<ul className='flex justify-around items-center w-full px-4 max-w-lg'>
 				{technologies.map(tech => (
 					<Technology details={details[tech]} />
 				))}

@@ -13,11 +13,11 @@ export default function KEF() {
 
 	const image = (
 		<div
-			className='px-4 h-full container mx-auto flex flex-col justify-center items-center'
+			className='px-8 h-full container mx-auto flex flex-col justify-center items-center max-w-7xl'
 			data-aos='fade-up'
 		>
 			<div className='flex justify-center items-center mx-auto'>
-				<div className='relative w-full px-10'>
+				<div className='relative w-full px-10 '>
 					<div className='kef-img-container relative'>
 						<img
 							src={KEF1}
@@ -117,5 +117,3 @@ const details = (
 		</li>
 	</>
 );
-
-// fix the whole <ProjectDetails/> size issues.

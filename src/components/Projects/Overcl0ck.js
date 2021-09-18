@@ -26,7 +26,7 @@ export default function Overclock() {
 				/>
 			</div>
 
-			<p className='text-center font-light text-md font-Montserrat'>
+			<p className='text-center font-light text-md font-Montserrat md:hidden'>
 				{caption}
 			</p>
 		</div>

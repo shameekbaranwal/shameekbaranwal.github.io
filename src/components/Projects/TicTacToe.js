@@ -7,26 +7,26 @@ import tictactoe3 from '../../assets/projects/tictactoe3.jpg';
 import tictactoe4 from '../../assets/projects/tictactoe4.jpg';
 import ExternalLink from '../ExternalLink.js';
 
-export default function KEF() {
+export default function TicTacToe() {
 	const caption =
-		'A standard progressive web-app implementation of the ancient game with HTML5, CSS3, and vanilla JS.';
+		'A minimalistic progressive web-app implementation of the ancient game.';
 
 	const image = (
 		<div
-			className='px-20 h-full container mx-auto flex flex-col justify-center items-center'
+			className='px-8 h-full container mx-auto flex flex-col justify-center items-center max-w-7xl'
 			data-aos='fade-up'
 		>
 			<div className='flex justify-center items-center mx-auto'>
-				<div className='relative w-full px-10'>
+				<div className='relative w-full px-10 '>
 					<div className='tictactoe-img-container relative'>
 						<img
 							src={tictactoe1}
-							alt={'Tic-Tac-Toe screenshot 1'}
+							alt={'tictactoe Volunteering App screenshot 1'}
 							className='tictactoe-img-1'
 						/>
 						<img
-							src={tictactoe2}
-							alt={'Tic-Tac-Toe screenshot 2'}
+							src={tictactoe3}
+							alt={'tictactoe Volunteering App screenshot 2'}
 							className='tictactoe-img-2'
 						/>
 					</div>
@@ -34,20 +34,20 @@ export default function KEF() {
 				<div className='relative w-full px-10'>
 					<div className='tictactoe-img-container relative'>
 						<img
-							src={tictactoe3}
-							alt={'Tic-Tac-Toe screenshot 3'}
+							src={tictactoe4}
+							alt={'tictactoe Volunteering App screenshot 3'}
 							className='tictactoe-img-1'
 						/>
 						<img
-							src={tictactoe4}
-							alt={'Tic-Tac-Toe screenshot 4'}
+							src={tictactoe2}
+							alt={'tictactoe Volunteering App screenshot 4'}
 							className='tictactoe-img-2'
 						/>
 					</div>
 				</div>
 			</div>
 
-			<p className='text-center font-light text-md font-Montserrat'>
+			<p className='text-center font-light text-md font-Montserrat md:hidden'>
 				{caption}
 			</p>
 		</div>
@@ -63,6 +63,7 @@ export default function KEF() {
 			live={'https://tic-tac-toe-shmk.netlify.app/'}
 			code={'https://github.com/shameekbaranwal/tic-tac-toe'}
 			position='left'
+			caption={caption}
 		/>
 	);
 }
@@ -84,5 +85,3 @@ const details = (
 		</li>
 	</>
 );
-
-// fix the whole <ProjectDetails/> size issues.
