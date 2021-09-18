@@ -29,7 +29,7 @@ export default function Project({
 					{title}
 				</h3>
 				<div className='md:hidden'>{image}</div>
-				<p className='hidden md:block pt-4 text-center font-light text-md font-Montserrat'>
+				<p className='hidden md:block pt-4 maxw- text-center font-light text-md font-Montserrat'>
 					{caption}
 				</p>
 				<ProjectDetails details={details} />
