@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-export default function ProjectDetails() {
+export default function ProjectDetails({ details, size }) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<div
-			className={`overflow-hidden mt-8 transition-all flex flex-col justify-center items-center duration-250`}
+			className={`overflow-hidden my-8 transition-all flex flex-col justify-center items-center duration-250`}
 			data-aos='fade-up'
 		>
 			<svg
@@ -27,24 +27,9 @@ export default function ProjectDetails() {
 			</svg>
 			<ul
 				className={`font-thin text-justify mx-8 mt-8
-				 list-disc transition-all duration-200 ${isOpen ? 'h-40' : 'h-0'}`}
+				list-disc transition-all duration-500} ${isOpen ? 'max-h-96' : 'max-h-0'}`}
 			>
-				<li>
-					Supported by the official{' '}
-					<a
-						href='https://www.petfinder.com/developers/'
-						rel='noopener noreferrer'
-						target='_blank'
-						className='bits'
-					>
-						Petfinder API
-					</a>
-					.
-				</li>
-				<li>
-					Learned the concepts of Responsive Web Design using
-					Tailwind, Routing, and modern React fundamentals.
-				</li>
+				{details}
 			</ul>
 		</div>
 	);

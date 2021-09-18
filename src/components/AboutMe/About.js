@@ -1,6 +1,7 @@
 import React from 'react';
 
 import pfp from '../../assets/social/dp.png';
+import ExternalLink from '../ExternalLink.js';
 
 export default function About() {
 	return (
@@ -32,14 +33,9 @@ export default function About() {
 					real-world enterprise projects. I am currently pursuing my{' '}
 					<strong className='font-light'>
 						B.E. in Computer Science Engineering at{' '}
-						<a
-							href='https://bits-pilani.ac.in'
-							className='bits'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
+						<ExternalLink href='https://bits-pilani.ac.in'>
 							BITS Pilani
-						</a>
+						</ExternalLink>
 					</strong>
 					, and I am looking for an experience-building internship for
 					the summer of 2022 to enhance my skills as well as to learn

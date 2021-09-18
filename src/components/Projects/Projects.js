@@ -1,5 +1,9 @@
 import React from 'react';
-import Project from './Project.js';
+import AdoptMe from './AdoptMe.js';
+import KEF from './KEF.js';
+import Overcl0ck from './Overcl0ck.js';
+import TicTacToe from './TicTacToe.js';
+// import Project from './Project.js';
 
 export default function Projects() {
 	return (
@@ -11,11 +15,15 @@ export default function Projects() {
 				Projects
 			</h2>
 			<ul>
+				{/*<Project title='KEF Volunteering App' />
 				<Project title='adopt-me' />
-				<Project title='KEF Volunteering App' />
 				<Project title='overcl0ck' />
-				<Project title='portfolio' />
 				<Project title='tic-tac-toe' />
+			*/}
+				<KEF />
+				<AdoptMe />
+				<TicTacToe />
+				<Overcl0ck />
 			</ul>
 		</div>
 	);

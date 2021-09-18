@@ -109,6 +109,112 @@
 	.messagelabel {
 		@apply absolute cursor-text left-1.5 -top-1.5 text-xs font-light text-gray-600 peer-placeholder-shown:top-4 peer-placeholder-shown:left-1.5 peer-focus-within:left-1.5 peer-focus-within:-top-1.5 peer-placeholder-shown:text-sm peer-focus-within:text-xs transition-all;
 	}
+
+	.adoptme-img-container {
+		@apply relative my-8 mx-auto;
+		/* position: fixed; */
+		transform-style: preserve-3d;
+		transform: rotateY(-30deg) rotateX(20deg);
+	}
+
+	.adoptme-img-1 {
+		@apply blur-none mt-5 object-cover rounded-md md:rounded-3xl absolute opacity-100 -left-5 -top-8;
+		transform: translateZ(5px);
+		transition: all 0.5s;
+	}
+
+	.adoptme-img-container:hover .adoptme-img-1 {
+		@apply opacity-30 left-5 top-0;
+		transform: translateZ(-5px);
+	}
+
+	.adoptme-img-2 {
+		@apply mt-5 object-cover rounded-md md:rounded-3xl opacity-30 top-0;
+		transition: all 0.5s;
+	}
+
+	.adoptme-img-container:hover .adoptme-img-2 {
+		@apply blur-none opacity-100 left-5 -top-8;
+	}
+
+	.kef-img-container {
+		@apply relative my-8 w-full container;
+		transform-style: preserve-3d;
+		transform: rotateY(-30deg) rotateX(20deg);
+	}
+
+	.kef-img-1 {
+		@apply blur-none mt-5 w-auto h-40 object-cover rounded-md absolute opacity-100 -left-5 -top-8;
+		transform: translateZ(5px);
+		transition: all 0.5s;
+	}
+
+	.kef-img-container:hover .kef-img-1 {
+		@apply opacity-30 left-5 top-0;
+		transform: translateZ(-5px);
+	}
+
+	.kef-img-2 {
+		@apply mt-5 object-cover w-auto h-40 rounded-md opacity-30 top-0;
+		transition: all 0.5s;
+	}
+
+	.kef-img-container:hover .kef-img-2 {
+		@apply blur-none opacity-100 left-5 -top-8;
+	}
+
+	.overclock-img-container {
+		@apply relative my-8 mx-auto;
+		/* position: fixed; */
+		transform-style: preserve-3d;
+		transform: rotateY(-30deg) rotateX(20deg);
+	}
+
+	.overclock-img-1 {
+		@apply blur-none mt-5 object-cover rounded-md md:rounded-3xl absolute opacity-100 -left-5 -top-8;
+		transform: translateZ(5px);
+		transition: all 0.5s;
+	}
+
+	.overclock-img-container:hover .overclock-img-1 {
+		@apply opacity-30 left-5 top-0;
+		transform: translateZ(-5px);
+	}
+
+	.overclock-img-2 {
+		@apply mt-5 object-cover rounded-md md:rounded-3xl opacity-30 top-0;
+		transition: all 0.5s;
+	}
+
+	.overclock-img-container:hover .overclock-img-2 {
+		@apply blur-none opacity-100 left-5 -top-8;
+	}
+
+	.tictactoe-img-container {
+		@apply relative my-8 w-full container;
+		transform-style: preserve-3d;
+		transform: rotateY(-30deg) rotateX(20deg);
+	}
+
+	.tictactoe-img-1 {
+		@apply blur-none mt-5 w-auto h-40 object-cover rounded-md absolute opacity-100 -left-5 -top-8;
+		transform: translateZ(5px);
+		transition: all 0.5s;
+	}
+
+	.tictactoe-img-container:hover .tictactoe-img-1 {
+		@apply opacity-30 left-5 top-0;
+		transform: translateZ(-5px);
+	}
+
+	.tictactoe-img-2 {
+		@apply mt-5 object-cover w-auto h-40 rounded-md opacity-30 top-0;
+		transition: all 0.5s;
+	}
+
+	.tictactoe-img-container:hover .tictactoe-img-2 {
+		@apply blur-none opacity-100 left-5 -top-8;
+	}
 }
 
 @layer utilities {

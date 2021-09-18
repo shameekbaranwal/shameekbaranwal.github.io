@@ -11,16 +11,21 @@ export default function ContactForm() {
 			<div
 				className='text-richblue-900 my-20 bg-gray-200 px-4 sm:px-7 py-5 rounded-2xl shadow-lg mx-2 w-full max-w-lg bg-opacity-90'
 				id='contact'
+				data-aos='fade-up'
 			>
-				<h2 className='text-3xl font-regular text-center mb-6 font-Montserrat text-richblue-400'>
+				<h2
+					className='text-3xl font-regular text-center mb-6 font-Montserrat text-richblue-400'
+					data-aos='fade-up'
+				>
 					Get in Touch
 				</h2>
 				<form
 					action='/#'
 					className='flex flex-col justify-center items-center text-richblue-900'
+					data-aos='fade-up'
 				>
 					<div className='flex relative flex-col sm:gap-x-1 sm:flex-row w-full justify-center items-center'>
-						<div className='w-full relative'>
+						<div className='w-full relative' data-aos='fade-up'>
 							<input
 								id='name'
 								type='text'
@@ -34,7 +39,7 @@ export default function ContactForm() {
 								Name
 							</label>
 						</div>
-						<div className='w-full relative'>
+						<div className='w-full relative' data-aos='fade-up'>
 							<input
 								id='email'
 								type='email'
@@ -49,7 +54,7 @@ export default function ContactForm() {
 							</label>
 						</div>
 					</div>
-					<div className='w-full relative'>
+					<div className='w-full relative' data-aos='fade-up'>
 						<textarea
 							id='message'
 							type='text'
@@ -69,6 +74,7 @@ export default function ContactForm() {
 						onClick={e => {
 							e.preventDefault();
 						}}
+						data-aos='fade-up'
 					>
 						Submit
 					</button>
