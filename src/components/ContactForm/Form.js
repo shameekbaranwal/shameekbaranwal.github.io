@@ -2,18 +2,38 @@ import React, { useState } from 'react';
 import MessageInput from './MessageInput.js';
 import TextInput from './TextInput.js';
 
+// Refactoring idea: Rewrite the error logic using hook. Create a hook that takes in a function during initialization, and returns [errorMessage, ok] type of value. if(!ok && showError /*from <TextInput/>*/), errorMessage is displayed. Otherwise errorMessage is not displayed. While submitting, will just need to see if all ok, and then submit.
+
 export default function Form() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
-	const isEmpty = val => val.trim() === '';
+	const validation = {
+		isEmpty: {
+			condition: val => val.trim() === '',
+			message: 'This field cannot be left empty.',
+		},
+		isInvlidEmail: {
+			condition: val => {
+				const re =
+					/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-	const isValidEmail = val => {
-		const re =
-			/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+				return !re.test(val.toLowerCase());
+			},
+			message: 'Please enter a valid email address.',
+		},
+	};
 
-		return re.test(val.toLowerCase());
+	const validate = (validation, value) => {
+		return validation.find(v => v.condition(value)) || '';
+	};
+
+	const errors = {
+		name: validate([validation.isEmpty], name).message,
+		email: validate([validation.isEmpty, validation.isInvlidEmail], email)
+			.message,
+		message: validate([validation.isEmpty], message).message,
 	};
 
 	return (
@@ -28,16 +48,22 @@ export default function Form() {
 					type='text'
 					value={name}
 					onChange={setName}
+					error={errors.name}
 				/>
 				<TextInput
 					name='Email Address'
 					type='email'
 					value={email}
 					onChange={setEmail}
+					error={errors.email}
 				/>
 			</div>
 			<div className='w-full relative' data-aos='fade-up'>
-				<MessageInput value={message} onChange={setMessage} />
+				<MessageInput
+					value={message}
+					onChange={setMessage}
+					error={errors.message}
+				/>
 			</div>
 			<button
 				type='submit'

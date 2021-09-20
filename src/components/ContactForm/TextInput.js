@@ -1,6 +1,9 @@
 import React from 'react';
+import { useState } from 'react';
 
-export default function TextInput({ name, type, value, onChange }) {
+export default function TextInput({ name, type, value, onChange, error }) {
+	const [showError, setShowError] = useState(false);
+
 	return (
 		<div className='w-full relative' data-aos='fade-up'>
 			<input
@@ -10,10 +13,13 @@ export default function TextInput({ name, type, value, onChange }) {
 				className='formfield peer'
 				value={value}
 				onChange={e => onChange(e.target.value)}
+				onFocus={() => setShowError(true)}
 			/>
-			<p className='hidden peer-focus:block absolute text-xs -bottom-3 sm:bottom-0 left-0 text-imperialRed font-light text-center w-full'>
-				This field cannot be empty
-			</p>
+			{showError && (
+				<p className='absolute text-xs -bottom-3 sm:bottom-0 left-0 text-imperialRed font-light text-center w-full'>
+					{error}
+				</p>
+			)}
 			<label
 				htmlFor={name}
 				className='formlabel peer-placeholder-shown:text-md duration-800'
