@@ -4,11 +4,13 @@ export default function Tooltip({ children, text }) {
 	const tipRef = React.createRef(null);
 
 	const handleMouseEnter = () => {
+		tipRef.current.style.display = 'flex';
 		tipRef.current.style.opacity = 1;
 		tipRef.current.style.marginLeft = '20px';
 	};
 
 	const handleMouseLeave = () => {
+		tipRef.current.style.display = 'none';
 		tipRef.current.style.opacity = 0;
 		tipRef.current.style.marginLeft = '10px';
 	};
@@ -20,7 +22,7 @@ export default function Tooltip({ children, text }) {
 			onMouseLeave={handleMouseLeave}
 		>
 			<div
-				className='absolute whitespace-no-wrap bg-gradient-to-r from-richblue-800 to-transparent text-white px-4 py-2 rounded flex items-center transition-all duration-150 min-w-full'
+				className='absolute whitespace-no-wrap bg-gradient-to-r from-richblue-800 to-transparent text-white px-4 py-2 rounded flex items-center transition-all duration-150 min-w-full backdrop-blur-md'
 				style={{ bottom: '150%', left: '-60%', opacity: 0 }}
 				ref={tipRef}
 			>
