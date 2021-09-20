@@ -49,40 +49,42 @@ export default function About() {
 					</p>
 				</div>
 				<div
-					className='transition-all duration-200 bg-gray-300 bg-opacity-10 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur shadow-xl mx-10 max-w-md hover:bg-opacity-5'
+					className='transition-all duration-1000 bg-gray-300 bg-opacity-10 hover:bg-opacity-5 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur hover:backdrop-blur-sm shadow-xl mx-10 max-w-lg'
 					data-aos='fade-up'
 				>
 					<h3 className='text-xl text-center font-extralight'>
 						Some highlights
 					</h3>
 					<ul className='mt-2'>
-						<li className='ml-6 min-w-[0ch] font-thin before:content-["⪼"] before:mr-2'>
+						<li className='mx-1 min-w-[0ch] font-thin before:content-["⪼"] before:mr-2'>
 							Secured third rank in{' '}
 							<ExternalLink href='http://www.cmseducation.org/cofas/results.html'>
 								COFAS
 							</ExternalLink>
 							{' International Computer Olympiad - '}
 							Computer Wizard{' '}
-							<span className='font-mono'>(11/2018)</span>
+							<span className='font-mono'>(11/2018)</span>.
 						</li>
-						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
-							Secured 97.25% in ISC Board Examinations.
+						<li className='mx-1 font-thin before:content-["⪼"] before:mr-2'>
+							Secured 97.25% in ISC Board Examinations{' '}
+							<span className='font-mono'>(05/2019)</span>.
 						</li>
-						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
+						<li className='mx-1 font-thin before:content-["⪼"] before:mr-2'>
 							Maintained a constant ⭐⭐⭐⭐⭐ rating across all
 							gigs on{' '}
 							<ExternalLink href='https://fiverr.com/shameekbaranwal'>
 								Fiverr
-							</ExternalLink>
-							.
+							</ExternalLink>{' '}
+							<span className='font-mono'>(03/2021)</span>.
 						</li>
-						<li className='ml-6 font-thin before:content-["⪼"] before:mr-2'>
+						<li className='mx-1 font-thin before:content-["⪼"] before:mr-2'>
 							Received a{' '}
 							<ExternalLink href='https://drive.google.com/file/d/1Oeq2aTYddU0l3ClYVgu3us4dZ44PC6B8/view?usp=sharing'>
 								Letter of Recommendation
 							</ExternalLink>{' '}
 							from Kotak Education Foundation at the conclusion of
-							my internship in the Summer of 2021.
+							my internship{' '}
+							<span className='font-mono'>(07/2021)</span>.
 						</li>
 					</ul>
 				</div>
