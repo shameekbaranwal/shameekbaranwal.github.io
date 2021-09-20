@@ -35,10 +35,11 @@ export default function Form() {
 	};
 
 	const errors = {
-		name: validate([validation.isEmpty], name).message,
-		email: validate([validation.isEmpty, validation.isInvlidEmail], email)
-			.message,
-		message: validate([validation.isEmpty], message).message,
+		name: () => validate([validation.isEmpty], name).message,
+		email: () =>
+			validate([validation.isEmpty, validation.isInvlidEmail], email)
+				.message,
+		message: () => validate([validation.isEmpty], message).message,
 	};
 
 	return (
@@ -47,7 +48,6 @@ export default function Form() {
 			method='POST'
 			className='flex flex-col justify-center items-center text-richblue-900'
 			data-aos='fade-up'
-			ref={submit}
 		>
 			<div className='flex relative flex-col sm:gap-x-1 sm:flex-row w-full justify-center items-center'>
 				<TextInput
@@ -55,7 +55,7 @@ export default function Form() {
 					type='text'
 					value={name}
 					onChange={setName}
-					error={errors.name}
+					error={errors.name()}
 					showAllErrors={showAllErrors}
 				/>
 				<TextInput
@@ -63,7 +63,7 @@ export default function Form() {
 					type='email'
 					value={email}
 					onChange={setEmail}
-					error={errors.email}
+					error={errors.email()}
 					showAllErrors={showAllErrors}
 				/>
 			</div>
@@ -71,7 +71,7 @@ export default function Form() {
 				<MessageInput
 					value={message}
 					onChange={setMessage}
-					error={errors.message}
+					error={errors.message()}
 					showAllErrors={showAllErrors}
 				/>
 			</div>
@@ -82,12 +82,15 @@ export default function Form() {
 				className='outline-none bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8 disabled:bg-opacity-30'
 				disabled={false}
 				onClick={e => {
+					e.preventDefault();
 					// Enable the visibility of all errors.
 					setShowAllErrors(true);
 					// If no errors exist, then try submitting.
-					if (!(errors.name + errors.email + errors.message)) {
+					console.log('out');
+					if (!(errors.name() + errors.email() + errors.message())) {
 						// captcha and submit
 						submit.current.click();
+						console.log(submit.current);
 					}
 				}}
 			>

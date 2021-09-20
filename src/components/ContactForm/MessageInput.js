@@ -21,7 +21,7 @@ export default function MessageInput({
 				onChange={e => onChange(e.target.value)}
 				// onFocus={() => setShowError(true)}
 				onBlur={() => setShowError(true)}
-				required
+				// required
 			/>
 			{(showError || showAllErrors) && (
 				<p className='absolute text-xs -bottom-2 left-0 text-imperialRed font-light text-center w-full'>
