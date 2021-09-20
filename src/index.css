@@ -110,6 +110,14 @@
 		@apply absolute cursor-text left-1.5 -top-1.5 text-xs font-light text-gray-600 peer-placeholder-shown:top-4 peer-placeholder-shown:left-1.5 peer-focus-within:left-1.5 peer-focus-within:-top-1.5 peer-placeholder-shown:text-sm peer-focus-within:text-xs transition-all;
 	}
 
+	.primary-btn {
+		@apply transition-all duration-200 border-2 border-turq-600 bg-turq-600 px-3 py-2 mx-2 text-richblue-800 hover:bg-opacity-10 hover:border-seashell hover:border-opacity-20 hover:text-seashell rounded-md font-light hover:font-medium hover:text-lg;
+	}
+
+	.secondary-btn {
+		@apply transition-all duration-200 border-2 border-seashell px-3 py-2 mx-2 my-10 hover:border-opacity-10 rounded-md font-light hover:font-medium hover:text-lg;
+	}
+
 	.kef-img-container {
 		@apply relative my-8 w-full container;
 		transform-style: preserve-3d;
