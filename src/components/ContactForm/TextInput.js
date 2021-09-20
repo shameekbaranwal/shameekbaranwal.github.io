@@ -15,6 +15,7 @@ export default function TextInput({
 		<div className='w-full relative' data-aos='fade-up'>
 			<input
 				id={name}
+				name={name}
 				type={type}
 				placeholder=' '
 				className='formfield peer'

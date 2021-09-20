@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+
 import MessageInput from './MessageInput.js';
 import TextInput from './TextInput.js';
 
@@ -10,6 +11,8 @@ export default function Form() {
 	const [message, setMessage] = useState('');
 
 	const [showAllErrors, setShowAllErrors] = useState(false);
+
+	const submit = useRef(null);
 
 	const validation = {
 		isEmpty: {
@@ -40,9 +43,11 @@ export default function Form() {
 
 	return (
 		<form
-			action='/#'
+			action='https://formspree.io/f/xgerdlrk'
+			method='POST'
 			className='flex flex-col justify-center items-center text-richblue-900'
 			data-aos='fade-up'
+			ref={submit}
 		>
 			<div className='flex relative flex-col sm:gap-x-1 sm:flex-row w-full justify-center items-center'>
 				<TextInput
@@ -70,17 +75,28 @@ export default function Form() {
 					showAllErrors={showAllErrors}
 				/>
 			</div>
+			<button type='submit' className='hidden' ref={submit}>
+				Submit
+			</button>
 			<button
-				type='submit'
-				className='outline-none bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8'
+				className='outline-none bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8 disabled:bg-opacity-30'
+				disabled={false}
 				onClick={e => {
-					e.preventDefault();
+					// Enable the visibility of all errors.
 					setShowAllErrors(true);
-					console.log({ name, email, message });
+					// If no errors exist, then try submitting.
+					if (!(errors.name + errors.email + errors.message)) {
+						// captcha and submit
+						submit.current.click();
+					}
 				}}
 			>
 				Submit
 			</button>
+			{
+				// <p>{state.submitting && 'Submitting'}</p>
+				// <p>{state.succeeded && 'Succeeded'}</p>
+			}
 		</form>
 	);
 }
