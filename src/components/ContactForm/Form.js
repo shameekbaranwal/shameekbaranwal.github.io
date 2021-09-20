@@ -9,6 +9,8 @@ export default function Form() {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
+	const [showAllErrors, setShowAllErrors] = useState(false);
+
 	const validation = {
 		isEmpty: {
 			condition: val => val.trim() === '',
@@ -49,6 +51,7 @@ export default function Form() {
 					value={name}
 					onChange={setName}
 					error={errors.name}
+					showAllErrors={showAllErrors}
 				/>
 				<TextInput
 					name='Email Address'
@@ -56,6 +59,7 @@ export default function Form() {
 					value={email}
 					onChange={setEmail}
 					error={errors.email}
+					showAllErrors={showAllErrors}
 				/>
 			</div>
 			<div className='w-full relative' data-aos='fade-up'>
@@ -63,6 +67,7 @@ export default function Form() {
 					value={message}
 					onChange={setMessage}
 					error={errors.message}
+					showAllErrors={showAllErrors}
 				/>
 			</div>
 			<button
@@ -70,6 +75,7 @@ export default function Form() {
 				className='outline-none bg-richblue-300 px-4 py-1 rounded-lg hover:bg-richblue-100 focus:bg-richblue-600 my-5 text-seashell transition-all duration-200 shadow-sm mb-8'
 				onClick={e => {
 					e.preventDefault();
+					setShowAllErrors(true);
 					console.log({ name, email, message });
 				}}
 			>

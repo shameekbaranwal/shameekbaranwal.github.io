@@ -1,7 +1,14 @@
 import React from 'react';
 import { useState } from 'react';
 
-export default function TextInput({ name, type, value, onChange, error }) {
+export default function TextInput({
+	name,
+	type,
+	value,
+	onChange,
+	error,
+	showAllErrors,
+}) {
 	const [showError, setShowError] = useState(false);
 
 	return (
@@ -15,7 +22,7 @@ export default function TextInput({ name, type, value, onChange, error }) {
 				onChange={e => onChange(e.target.value)}
 				onFocus={() => setShowError(true)}
 			/>
-			{showError && (
+			{(showError || showAllErrors) && (
 				<p className='absolute text-xs -bottom-3 sm:bottom-0 left-0 text-imperialRed font-light text-center w-full'>
 					{error}
 				</p>
