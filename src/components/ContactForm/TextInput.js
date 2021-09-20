@@ -21,7 +21,8 @@ export default function TextInput({
 				className='formfield peer'
 				value={value}
 				onChange={e => onChange(e.target.value)}
-				onFocus={() => setShowError(true)}
+				// onFocus={() => setShowError(true)}
+				onBlur={() => setShowError(true)}
 			/>
 			{(showError || showAllErrors) && (
 				<p className='absolute text-xs -bottom-3 sm:bottom-0 left-0 text-imperialRed font-light text-center w-full'>

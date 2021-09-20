@@ -19,7 +19,8 @@ export default function MessageInput({
 				className='formfield peer sm:my-2 h-40'
 				value={value}
 				onChange={e => onChange(e.target.value)}
-				onFocus={() => setShowError(true)}
+				// onFocus={() => setShowError(true)}
+				onBlur={() => setShowError(true)}
 				required
 			/>
 			{(showError || showAllErrors) && (
