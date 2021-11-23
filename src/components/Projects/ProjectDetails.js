@@ -26,8 +26,10 @@ export default function ProjectDetails({ details, size }) {
 				/>
 			</svg>
 			<ul
-				className={`font-thin text-justify mx-8 xl:mx-32 2xl:mx-36 mt-8
-				list-disc transition-all duration-500} ${isOpen ? 'max-h-96' : 'max-h-0'}`}
+				className={`bg-white rounded-md bg-opacity-10 px-8 font-thin text-justify mx-8 xl:mx-28 2xl:mx-32 mt-8
+				list-disc transition-all duration-500} ${
+					isOpen ? 'max-h-96 py-4' : 'max-h-0 py-0'
+				}`}
 			>
 				{details}
 			</ul>
