@@ -3,6 +3,8 @@ import React from 'react';
 // import AdoptMePC from '../../assets/projects/AdoptMePC.png';
 import ProjectDetails from './ProjectDetails.js';
 import TechnologiesUsed from './TechnologiesUsed.js';
+import SecondaryButton from '../General/SecondaryButton.js';
+import PrimaryButton from '../General/PrimaryButton.js';
 
 export default function Project({
 	title,
@@ -42,24 +44,12 @@ export default function Project({
 					data-aos='fade-up'
 				>
 					<button className='' data-aos='fade-up'>
-						<a
-							className='transition-all duration-200 border-2 border-turq-600 bg-turq-600 px-3 py-2 mx-2 text-richblue-800 hover:bg-opacity-10 hover:border-seashell hover:border-opacity-20 hover:text-seashell rounded-md font-light hover:font-medium hover:text-lg'
-							href={live}
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							Live Demo
-						</a>
+						<PrimaryButton href={live}>Live Demo</PrimaryButton>
 					</button>
-					<button data-aos='fade-up'>
-						<a
-							className='transition-all duration-200 border-2 border-seashell px-3 py-2 mx-2 my-10 hover:border-opacity-10 rounded-md font-light hover:font-medium hover:text-lg'
-							href={code}
-							target='_blank'
-							rel='noopener noreferrer'
-						>
+					<button className='' data-aos='fade-up'>
+						<SecondaryButton href={code}>
 							Source Code
-						</a>
+						</SecondaryButton>
 					</button>
 				</div>
 			</div>

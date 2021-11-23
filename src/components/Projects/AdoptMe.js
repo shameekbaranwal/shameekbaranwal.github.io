@@ -3,7 +3,7 @@ import React from 'react';
 import Project from './Project.js';
 import AdoptMe1 from '../../assets/projects/AdoptMe1.png';
 import AdoptMe2 from '../../assets/projects/AdoptMe2.png';
-import ExternalLink from '../ExternalLink.js';
+import ExternalLink from '../General/ExternalLink.js';
 
 export default function AdoptMe() {
 	const caption =

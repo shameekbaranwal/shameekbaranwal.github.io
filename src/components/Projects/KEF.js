@@ -5,7 +5,7 @@ import KEF1 from '../../assets/projects/KEF1.jpg';
 import KEF2 from '../../assets/projects/KEF2.jpg';
 import KEF3 from '../../assets/projects/KEF3.jpg';
 import KEF4 from '../../assets/projects/KEF4.jpg';
-import ExternalLink from '../ExternalLink.js';
+import ExternalLink from '../General/ExternalLink.js';
 
 export default function KEF() {
 	const caption =
@@ -79,9 +79,9 @@ const details = (
 	<>
 		<li>
 			A mobile application to simplify the methods of communicating
-			information between the{' '}
+			information between the Volunteering Department at{' '}
 			<ExternalLink href='https://kotakeducation.org' className=''>
-				Volunteering Department at KEF
+				KEF
 			</ExternalLink>{' '}
 			and the registered Volunteers and Beneficiaries.
 		</li>

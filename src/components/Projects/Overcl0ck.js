@@ -3,7 +3,7 @@ import React from 'react';
 import Project from './Project.js';
 import overcl0ck1 from '../../assets/projects/overcl0ck1.png';
 import overcl0ck2 from '../../assets/projects/overcl0ck2.png';
-import ExternalLink from '../ExternalLink.js';
+import ExternalLink from '../General/ExternalLink.js';
 
 export default function Overclock() {
 	const caption = 'A digital clock made of 360 analogue clocks.';

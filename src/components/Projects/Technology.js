@@ -1,4 +1,4 @@
-import Tooltip from '../Tooltip.js';
+import Tooltip from '../General/Tooltip.js';
 
 export default function Technology({ details }) {
 	return (

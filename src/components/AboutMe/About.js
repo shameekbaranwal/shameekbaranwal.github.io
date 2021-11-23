@@ -1,7 +1,7 @@
 import React from 'react';
 
 import pfp from '../../assets/social/dp.png';
-import ExternalLink from '../ExternalLink.js';
+import ExternalLink from '../General/ExternalLink.js';
 
 export default function About() {
 	return (
@@ -49,7 +49,7 @@ export default function About() {
 					</p>
 				</div>
 				<div
-					className='transition-all duration-1000 bg-gray-300 bg-opacity-10 hover:bg-opacity-5 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur hover:backdrop-blur-sm shadow-xl mx-10 max-w-lg'
+					className='!transition-all duration-200 bg-gray-300 bg-opacity-10 hover:bg-opacity-5 px-4 py-4 rounded mt-10 xl:mt-0 backdrop-blur hover:backdrop-blur-sm shadow-xl mx-10 max-w-lg'
 					data-aos='fade-up'
 				>
 					<h3 className='text-xl text-center font-extralight'>
@@ -78,9 +78,9 @@ export default function About() {
 							<span className='font-mono'>(03/2021)</span>.
 						</li>
 						<li className='mx-1 font-thin before:content-["⪼"] before:mr-2'>
-							Received a{' '}
+							Received an{' '}
 							<ExternalLink href='https://drive.google.com/file/d/1Oeq2aTYddU0l3ClYVgu3us4dZ44PC6B8/view?usp=sharing'>
-								Letter of Recommendation
+								LOR
 							</ExternalLink>{' '}
 							from Kotak Education Foundation at the conclusion of
 							my internship{' '}

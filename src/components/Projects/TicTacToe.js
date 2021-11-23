@@ -5,7 +5,7 @@ import tictactoe1 from '../../assets/projects/tictactoe1.jpg';
 import tictactoe2 from '../../assets/projects/tictactoe2.jpg';
 import tictactoe3 from '../../assets/projects/tictactoe3.jpg';
 import tictactoe4 from '../../assets/projects/tictactoe4.jpg';
-import ExternalLink from '../ExternalLink.js';
+import ExternalLink from '../General/ExternalLink.js';
 
 export default function TicTacToe() {
 	const caption =
