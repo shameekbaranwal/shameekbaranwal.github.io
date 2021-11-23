@@ -7,7 +7,9 @@ import SecondaryButton from '../General/SecondaryButton.js';
 export function LandingPageButtons() {
 	return (
 		<div className='flex flex-row justify-center items-center transition-all duration-100 z-[1]'>
-			<PrimaryButton href='#about'>Know More</PrimaryButton>
+			<PrimaryButton href='#about' sameTab={true}>
+				Know More
+			</PrimaryButton>
 			<SecondaryButton href={Resume}>View Resume</SecondaryButton>
 		</div>
 	);
