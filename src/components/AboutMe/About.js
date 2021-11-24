@@ -58,7 +58,7 @@ export default function About() {
 					<ul className='mt-2'>
 						<li className='mx-1 min-w-[0ch] font-thin before:content-["⪼"] before:mr-2'>
 							Secured third rank in{' '}
-							<ExternalLink href='http://www.cmseducation.org/cofas/results.html'>
+							<ExternalLink href='http://www.cmseducation.org/cofas/results.html#:~:text=SHAMEEK%20KUMAR%20BARANWAL'>
 								COFAS
 							</ExternalLink>
 							{' International Computer Olympiad - '}
