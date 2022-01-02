@@ -14,7 +14,11 @@ function App() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	useEffect(() => {
-		AOS.init();
+		AOS.init({
+			once: true,
+			duration: 300,
+			easing: 'ease-out-quart',
+		});
 	}, []);
 
 	return (
