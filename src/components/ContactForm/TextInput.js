@@ -18,7 +18,7 @@ export default function TextInput({
 				name={name}
 				type={type}
 				placeholder=' '
-				className='formfield peer'
+				className='formfield peer font-Montserrat text-sm selection:bg-richblue-600/80 selection:text-white'
 				value={value}
 				onChange={e => onChange(e.target.value)}
 				// onFocus={() => setShowError(true)}

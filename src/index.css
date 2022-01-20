@@ -103,7 +103,7 @@
 	}
 
 	.formlabel {
-		@apply absolute cursor-text left-0 left-1 top-0 sm:top-2 text-xs font-light text-gray-600 peer-placeholder-shown:top-6 peer-placeholder-shown:left-1.5 sm:peer-placeholder-shown:top-8 peer-placeholder-shown:left-2.5 peer-focus-within:left-0 peer-focus-within:top-0 sm:peer-focus-within:top-2 peer-focus-within:left-1 peer-focus-within:text-xs peer-placeholder-shown:text-sm transition-all;
+		@apply absolute cursor-text left-1 top-0 sm:top-2 text-xs font-light text-gray-600 peer-placeholder-shown:top-6  sm:peer-placeholder-shown:top-8 peer-placeholder-shown:left-2.5 peer-focus-within:top-0 sm:peer-focus-within:top-2 peer-focus-within:left-1 peer-focus-within:text-xs peer-placeholder-shown:text-sm transition-all;
 	}
 
 	.messagelabel {

@@ -23,7 +23,7 @@ function App() {
 
 	return (
 		<>
-			<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen overflow-hidden'>
+			<div className='bg-gradient-to-l from-richblue-600 to-richblue-800 min-w-screen min-h-screen overflow-hidden selection:bg-turq-700/75 '>
 				<NavBar isOpen={isOpen} setIsOpen={setIsOpen} />
 				<div className='flex flex-col justify-center items-center relative max-h-full'>
 					<Landing />

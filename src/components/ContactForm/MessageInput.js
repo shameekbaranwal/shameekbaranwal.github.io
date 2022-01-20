@@ -16,12 +16,10 @@ export default function MessageInput({
 				name='Message'
 				type='text'
 				placeholder=' '
-				className='formfield peer sm:my-2 h-40'
+				className='formfield peer sm:my-2 h-40 font-Montserrat text-sm selection:bg-richblue-600/80 selection:text-white'
 				value={value}
 				onChange={e => onChange(e.target.value)}
-				// onFocus={() => setShowError(true)}
 				onBlur={() => setShowError(true)}
-				// required
 			/>
 			{(showError || showAllErrors) && (
 				<p className='absolute text-xs -bottom-2 left-0 text-imperialRed font-light text-center w-full'>
