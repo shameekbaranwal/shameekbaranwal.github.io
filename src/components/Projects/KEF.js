@@ -18,30 +18,30 @@ export default function KEF() {
 		>
 			<div className='flex justify-center items-center mx-auto'>
 				<div className='relative w-full px-10 '>
-					<div className='kef-img-container relative'>
+					<div className='phone-project-img-container relative'>
 						<img
 							src={KEF1}
 							alt={'KEF Volunteering App screenshot 1'}
-							className='kef-img-1'
+							className='phone-project-img-1'
 						/>
 						<img
 							src={KEF2}
 							alt={'KEF Volunteering App screenshot 2'}
-							className='kef-img-2'
+							className='phone-project-img-2'
 						/>
 					</div>
 				</div>
 				<div className='relative w-full px-10'>
-					<div className='kef-img-container relative'>
+					<div className='phone-project-img-container relative'>
 						<img
 							src={KEF3}
 							alt={'KEF Volunteering App screenshot 3'}
-							className='kef-img-1'
+							className='phone-project-img-1'
 						/>
 						<img
 							src={KEF4}
 							alt={'KEF Volunteering App screenshot 4'}
-							className='kef-img-2'
+							className='phone-project-img-2'
 						/>
 					</div>
 				</div>

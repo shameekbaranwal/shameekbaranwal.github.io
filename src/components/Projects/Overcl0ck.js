@@ -13,16 +13,16 @@ export default function Overclock() {
 			className='w-full px-10 h-auto container mx-auto'
 			data-aos='fade-up'
 		>
-			<div className='overclock-img-container '>
+			<div className='pc-project-img-container '>
 				<img
 					src={overcl0ck1}
 					alt={'overcl0ck screenshot 1'}
-					className='overclock-img-1'
+					className='pc-project-img-1'
 				/>
 				<img
 					src={overcl0ck2}
 					alt={'overcl0ck screenshot 2'}
-					className='overclock-img-2'
+					className='pc-project-img-2'
 				/>
 			</div>
 

@@ -17,13 +17,13 @@
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
-		"start": "craco start",
+		"start": "cross-env TAILWIND_MODE=watch && craco start",
 		"build": "craco build",
 		"test": "craco test",
 		"eject": "react-scripts eject",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build",
-		"publish": "npm run build && cd ../production && git init && git remote add origin 'https://github.com/shameekbaranwal/shameekbaranwal.github.io.git' && git checkout -b production && git add . && git commit -m 'Updating deployment.' && git push origin production --force"
+		"publish": "npm run build && cd ../production && rm -rf ./* && cp -r ../code/build/* ./ && rm -rf .git && git init && git remote add origin 'https://github.com/shameekbaranwal/shameekbaranwal.github.io.git' && git checkout -b production && git add . && git commit -m 'Updating deployment.' && git push origin production --force"
 	},
 	"eslintConfig": {
 		"extends": [

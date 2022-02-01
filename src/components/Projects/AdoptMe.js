@@ -14,16 +14,16 @@ export default function AdoptMe() {
 			className='w-full px-10 h-auto container mx-auto'
 			data-aos='fade-up'
 		>
-			<div className='adoptme-img-container '>
+			<div className='pc-project-img-container '>
 				<img
 					src={AdoptMe2}
 					alt={'Adopt Me screenshot 1'}
-					className='adoptme-img-1'
+					className='pc-project-img-1'
 				/>
 				<img
 					src={AdoptMe1}
 					alt={'Adopt Me screenshot 2'}
-					className='adoptme-img-2'
+					className='pc-project-img-2'
 				/>
 			</div>
 

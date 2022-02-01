@@ -18,30 +18,30 @@ export default function TicTacToe() {
 		>
 			<div className='flex justify-center items-center mx-auto'>
 				<div className='relative w-full px-10 '>
-					<div className='tictactoe-img-container relative'>
+					<div className='phone-project-img-container relative'>
 						<img
 							src={tictactoe1}
 							alt={'tictactoe Volunteering App screenshot 1'}
-							className='tictactoe-img-1'
+							className='phone-project-img-1'
 						/>
 						<img
 							src={tictactoe3}
 							alt={'tictactoe Volunteering App screenshot 2'}
-							className='tictactoe-img-2'
+							className='phone-project-img-2'
 						/>
 					</div>
 				</div>
 				<div className='relative w-full px-10'>
-					<div className='tictactoe-img-container relative'>
+					<div className='phone-project-img-container relative'>
 						<img
 							src={tictactoe4}
 							alt={'tictactoe Volunteering App screenshot 3'}
-							className='tictactoe-img-1'
+							className='phone-project-img-1'
 						/>
 						<img
 							src={tictactoe2}
 							alt={'tictactoe Volunteering App screenshot 4'}
-							className='tictactoe-img-2'
+							className='phone-project-img-2'
 						/>
 					</div>
 				</div>
