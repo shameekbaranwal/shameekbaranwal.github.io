@@ -1,42 +1,25 @@
 import React from 'react';
 
-import Project from './Project.jsx';
+import Project from './Common/Project.jsx';
 import AdoptMe1 from '../../assets/projects/AdoptMe1.png';
 import AdoptMe2 from '../../assets/projects/AdoptMe2.png';
 import ExternalLink from '../General/ExternalLink.jsx';
+import PCImages from './Common/PCImages.jsx';
 
 export default function AdoptMe() {
 	const caption =
 		'A simple client-side web-app that allows users to view a live feed of real pets put up for adoption across the US.';
 
-	const image = (
-		<div
-			className='w-full px-10 h-auto container mx-auto'
-			data-aos='fade-up'
-		>
-			<div className='pc-project-img-container '>
-				<img
-					src={AdoptMe2}
-					alt={'Adopt Me screenshot 1'}
-					className='pc-project-img-1'
-				/>
-				<img
-					src={AdoptMe1}
-					alt={'Adopt Me screenshot 2'}
-					className='pc-project-img-2'
-				/>
-			</div>
-
-			<p className='text-center font-light text-md font-Montserrat md:hidden'>
-				{caption}
-			</p>
-		</div>
-	);
-
 	return (
 		<Project
 			title='adopt-me'
-			image={image}
+			image={
+				<PCImages
+					imgs={[AdoptMe1, AdoptMe2]}
+					caption={caption}
+					name='adopt-me'
+				/>
+			}
 			caption={caption}
 			details={details}
 			// size={10}

@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Project from './Project.jsx';
+import Project from './Common/Project.jsx';
+import PhoneImages from './Common/PhoneImages.jsx';
 import tictactoe1 from '../../assets/projects/tictactoe1.jpg';
 import tictactoe2 from '../../assets/projects/tictactoe2.jpg';
 import tictactoe3 from '../../assets/projects/tictactoe3.jpg';
@@ -11,54 +12,17 @@ export default function TicTacToe() {
 	const caption =
 		'A minimalistic progressive web-app implementation of the ancient game.';
 
-	const image = (
-		<div
-			className='px-8 h-full container mx-auto flex flex-col justify-center items-center max-w-7xl'
-			data-aos='fade-up'
-		>
-			<div className='flex justify-center items-center mx-auto'>
-				<div className='relative w-full px-10 '>
-					<div className='phone-project-img-container relative'>
-						<img
-							src={tictactoe1}
-							alt={'tictactoe Volunteering App screenshot 1'}
-							className='phone-project-img-1'
-						/>
-						<img
-							src={tictactoe3}
-							alt={'tictactoe Volunteering App screenshot 2'}
-							className='phone-project-img-2'
-						/>
-					</div>
-				</div>
-				<div className='relative w-full px-10'>
-					<div className='phone-project-img-container relative'>
-						<img
-							src={tictactoe4}
-							alt={'tictactoe Volunteering App screenshot 3'}
-							className='phone-project-img-1'
-						/>
-						<img
-							src={tictactoe2}
-							alt={'tictactoe Volunteering App screenshot 4'}
-							className='phone-project-img-2'
-						/>
-					</div>
-				</div>
-			</div>
-
-			<p className='text-center font-light text-md font-Montserrat md:hidden'>
-				{caption}
-			</p>
-		</div>
-	);
-
 	return (
 		<Project
 			title='tic-tac-toe'
-			image={image}
+			image={
+				<PhoneImages
+					imgs={[tictactoe1, tictactoe3, tictactoe4, tictactoe2]}
+					name='tic-tac-toe'
+					caption={caption}
+				/>
+			}
 			details={details}
-			// size={13}
 			technologies={['html', 'css', 'js']}
 			live={'https://tic-tac-toe-shmk.netlify.app/'}
 			code={'https://github.com/shameekbaranwal/tic-tac-toe'}

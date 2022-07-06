@@ -3,8 +3,8 @@ import React from 'react';
 // import AdoptMePC from '../../assets/projects/AdoptMePC.png';
 import ProjectDetails from './ProjectDetails.jsx';
 import TechnologiesUsed from './TechnologiesUsed.jsx';
-import SecondaryButton from '../General/SecondaryButton.jsx';
-import PrimaryButton from '../General/PrimaryButton.jsx';
+import SecondaryButton from '../../General/SecondaryButton.jsx';
+import PrimaryButton from '../../General/PrimaryButton.jsx';
 
 export default function Project({
 	title,
@@ -43,9 +43,11 @@ export default function Project({
 					className='flex flex-row justify-center items-center mt-16 gap-x-8'
 					data-aos='fade-up'
 				>
-					<button className='' data-aos='fade-up'>
-						<PrimaryButton href={live}>Live Demo</PrimaryButton>
-					</button>
+					{live && (
+						<button className='' data-aos='fade-up'>
+							<PrimaryButton href={live}>Live Demo</PrimaryButton>
+						</button>
+					)}
 					<button className='' data-aos='fade-up'>
 						<SecondaryButton href={code}>
 							Source Code

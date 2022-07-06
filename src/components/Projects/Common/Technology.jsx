@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Tooltip from '../General/Tooltip.jsx';
+import Tooltip from '../../General/Tooltip.jsx';
 
 export default function Technology({ details }) {
 	return (

@@ -1,19 +1,19 @@
 import React from 'react';
 
 import Technology from './Technology.jsx';
-import ReactJS from '../../assets/tools/react.png';
-import Tailwind from '../../assets/tools/tailwind.png';
-import ReactRouter from '../../assets/tools/react-router.png';
-import Formik from '../../assets/tools/formik.png';
-import Sheets from '../../assets/tools/sheets.png';
-import ReactNative from '../../assets/tools/react native.png';
-import Expo from '../../assets/tools/expo.png';
-import Node from '../../assets/tools/node.png';
-import Express from '../../assets/tools/express.png';
-import p5 from '../../assets/tools/p5.png';
-import HTML from '../../assets/languages/html.png';
-import CSS from '../../assets/languages/css.png';
-import JavaScript from '../../assets/languages/javascript.png';
+import ReactJS from '../../../assets/tools/react.png';
+import Tailwind from '../../../assets/tools/tailwind.png';
+import ReactRouter from '../../../assets/tools/react-router.png';
+import Formik from '../../../assets/tools/formik.png';
+import Sheets from '../../../assets/tools/sheets.png';
+import ReactNative from '../../../assets/tools/react native.png';
+import Expo from '../../../assets/tools/expo.png';
+import Node from '../../../assets/tools/node.png';
+import Express from '../../../assets/tools/express.png';
+import p5 from '../../../assets/tools/p5.png';
+import HTML from '../../../assets/languages/html.png';
+import CSS from '../../../assets/languages/css.png';
+import JavaScript from '../../../assets/languages/javascript.png';
 
 const details = {
 	react: {

@@ -1,44 +1,26 @@
 import React from 'react';
 
-import Project from './Project.jsx';
+import Project from './Common/Project.jsx';
 import overcl0ck1 from '../../assets/projects/overcl0ck1.png';
 import overcl0ck2 from '../../assets/projects/overcl0ck2.png';
 import ExternalLink from '../General/ExternalLink.jsx';
+import PCImages from './Common/PCImages.jsx';
 
 export default function Overclock() {
 	const caption = 'A digital clock made of 360 analogue clocks.';
 
-	const image = (
-		<div
-			className='w-full px-10 h-auto container mx-auto'
-			data-aos='fade-up'
-		>
-			<div className='pc-project-img-container '>
-				<img
-					src={overcl0ck1}
-					alt={'overcl0ck screenshot 1'}
-					className='pc-project-img-1'
-				/>
-				<img
-					src={overcl0ck2}
-					alt={'overcl0ck screenshot 2'}
-					className='pc-project-img-2'
-				/>
-			</div>
-
-			<p className='text-center font-light text-md font-Montserrat md:hidden'>
-				{caption}
-			</p>
-		</div>
-	);
-
 	return (
 		<Project
 			title='overcl0ck'
-			image={image}
+			image={
+				<PCImages
+					imgs={[overcl0ck1, overcl0ck2]}
+					name='overcl0ck'
+					caption={caption}
+				/>
+			}
 			caption={caption}
 			details={details}
-			// size={10}
 			technologies={['html', 'css', 'js', 'p5']}
 			live={'https://overcl0ck.netlify.app'}
 			code={'https://github.com/shameekbaranwal/overcl0ck'}

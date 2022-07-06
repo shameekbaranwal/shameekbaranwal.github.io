@@ -20,8 +20,7 @@
 		"build": "vite build",
 		"serve": "vite preview",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
-		"publish": "npm run build && cd ../production && rm -rf ./* && cp -r ../code/build/* ./ && rm -rf .git && git init && git remote add origin 'https://github.com/shameekbaranwal/shameekbaranwal.github.io.git' && git checkout -b production && git add . && git commit -m 'update' && git push origin production --force"
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": [

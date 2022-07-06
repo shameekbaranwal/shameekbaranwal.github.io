@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Project from './Project.jsx';
+import Project from './Common/Project.jsx';
+import PhoneImages from './Common/PhoneImages.jsx';
 import KEF1 from '../../assets/projects/KEF1.jpg';
 import KEF2 from '../../assets/projects/KEF2.jpg';
 import KEF3 from '../../assets/projects/KEF3.jpg';
@@ -11,54 +12,17 @@ export default function KEF() {
 	const caption =
 		'A full-stack mobile app made for Kotak Education Foundation as part of my virtual internship in the Summer of 2021.';
 
-	const image = (
-		<div
-			className='px-8 h-full container mx-auto flex flex-col justify-center items-center max-w-7xl'
-			data-aos='fade-up'
-		>
-			<div className='flex justify-center items-center mx-auto'>
-				<div className='relative w-full px-10 '>
-					<div className='phone-project-img-container relative'>
-						<img
-							src={KEF1}
-							alt={'KEF Volunteering App screenshot 1'}
-							className='phone-project-img-1'
-						/>
-						<img
-							src={KEF2}
-							alt={'KEF Volunteering App screenshot 2'}
-							className='phone-project-img-2'
-						/>
-					</div>
-				</div>
-				<div className='relative w-full px-10'>
-					<div className='phone-project-img-container relative'>
-						<img
-							src={KEF3}
-							alt={'KEF Volunteering App screenshot 3'}
-							className='phone-project-img-1'
-						/>
-						<img
-							src={KEF4}
-							alt={'KEF Volunteering App screenshot 4'}
-							className='phone-project-img-2'
-						/>
-					</div>
-				</div>
-			</div>
-
-			<p className='text-center font-light text-md font-Montserrat md:hidden'>
-				{caption}
-			</p>
-		</div>
-	);
-
 	return (
 		<Project
 			title='Kotak Education Foundation App'
-			image={image}
+			image={
+				<PhoneImages
+					imgs={[KEF1, KEF2, KEF3, KEF4]}
+					caption={caption}
+					name='KEF Volunteering'
+				/>
+			}
 			details={details}
-			// size={13}
 			technologies={[
 				'reactnative',
 				'expo',
@@ -80,9 +44,7 @@ const details = (
 		<li>
 			A mobile application to simplify the methods of communicating
 			information between the Volunteering Department at{' '}
-			<ExternalLink href='https://kotakeducation.org' className=''>
-				KEF
-			</ExternalLink>{' '}
+			<ExternalLink href='https://kotakeducation.org'>KEF</ExternalLink>{' '}
 			and the registered Volunteers and Beneficiaries.
 		</li>
 		<li>
@@ -91,27 +53,18 @@ const details = (
 		</li>
 		<li>
 			Received a{' '}
-			<ExternalLink
-				href='https://drive.google.com/file/d/1Oeq2aTYddU0l3ClYVgu3us4dZ44PC6B8/view?usp=sharing'
-				className='bg-gray-50 px-1 py-0.5 bg-opacity-10 rounded'
-			>
+			<ExternalLink href='https://drive.google.com/file/d/1Oeq2aTYddU0l3ClYVgu3us4dZ44PC6B8/view'>
 				Certificate of Appreciation
 			</ExternalLink>{' '}
 			and a{' '}
-			<ExternalLink
-				href='https://drive.google.com/file/d/1Oeq2aTYddU0l3ClYVgu3us4dZ44PC6B8/view?usp=sharing'
-				className='bg-gray-50 px-1 py-0.5 bg-opacity-10 rounded'
-			>
+			<ExternalLink href='https://drive.google.com/file/d/1ofyjTwW00GuY15pvR4lbZijA_wLwMI4e/view'>
 				Letter of Recommendation
 			</ExternalLink>{' '}
 			at the conclusion of the internship.
 		</li>
 		<li>
 			For more details about the project, check out the{' '}
-			<ExternalLink
-				href='https://drive.google.com/file/d/1R_HgGJGehIbOtvHcfdgtbMYTitb6dw11/view'
-				className='bg-gray-50 px-1 py-0.5 bg-opacity-10 rounded'
-			>
+			<ExternalLink href='https://drive.google.com/file/d/1R_HgGJGehIbOtvHcfdgtbMYTitb6dw11/view'>
 				Project Report.
 			</ExternalLink>
 		</li>
