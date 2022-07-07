@@ -8,7 +8,7 @@ import KEF3 from '../../assets/projects/KEF3.jpg';
 import KEF4 from '../../assets/projects/KEF4.jpg';
 import ExternalLink from '../General/ExternalLink.jsx';
 
-export default function KEF() {
+export default function KEF({ left }) {
 	const caption =
 		'A full-stack mobile app made for Kotak Education Foundation as part of my virtual internship in the Summer of 2021.';
 
@@ -34,7 +34,7 @@ export default function KEF() {
 			live={'https://bp-gc.in/kotak-refs'}
 			caption={caption}
 			code={'https://github.com/shameekbaranwal/KEF-Volunteering'}
-			position='left'
+			position={left ? 'left' : 'right'}
 		/>
 	);
 }

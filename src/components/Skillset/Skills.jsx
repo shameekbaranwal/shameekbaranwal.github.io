@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TabButton from '../General/TabButton.jsx';
 
 // import Skill from './Skill.js';
 import Languages from './Languages.jsx';
@@ -20,26 +21,16 @@ export default function Skills() {
 				Skillset
 			</h2>
 			<div className='flex flex-row justify-center items-center w-screen max-w-xl text-seashell text-xl mt-4 sticky top-0 h-20 px-4 sm:px-2'>
-				<button
-					className={`w-full rounded-lg mx-1 my-auto py-2 text-center hover:bg-richblue-200 font-thin transition-all cursor-pointer duration-200 focus:bg-richblue-100 hover:text-2xl outline-none ${
-						skillCategory === 'Tools'
-							? 'bg-richblue-100'
-							: 'bg-richblue-400'
-					}`}
-					onClick={() => setSkillCategory('Tools')}
-				>
-					Tools
-				</button>
-				<button
-					className={`w-full rounded-lg mx-1 my-auto py-2 text-center hover:bg-richblue-200 font-thin transition-all cursor-pointer duration-200 focus:bg-richblue-100 hover:text-2xl outline-none ${
-						skillCategory === 'Languages'
-							? 'bg-richblue-100'
-							: 'bg-richblue-400 '
-					}`}
-					onClick={() => setSkillCategory('Languages')}
-				>
-					Languages
-				</button>
+				<TabButton
+					name='Tools'
+					state={skillCategory}
+					setState={setSkillCategory}
+				/>
+				<TabButton
+					name='Languages'
+					state={skillCategory}
+					setState={setSkillCategory}
+				/>
 			</div>
 			<ul
 				className={`my-12 grid grid-cols-2 w-full h-full mx-auto gap-x-4 gap-y-6 px-4 text-richblue-300 sm:grid-cols-4 sm:gap-x-1 ${

@@ -6,7 +6,7 @@ import AdoptMe2 from '../../assets/projects/AdoptMe2.png';
 import ExternalLink from '../General/ExternalLink.jsx';
 import PCImages from './Common/PCImages.jsx';
 
-export default function AdoptMe() {
+export default function AdoptMe({ left }) {
 	const caption =
 		'A simple client-side web-app that allows users to view a live feed of real pets put up for adoption across the US.';
 
@@ -22,11 +22,10 @@ export default function AdoptMe() {
 			}
 			caption={caption}
 			details={details}
-			// size={10}
 			technologies={['react', 'tailwind', 'reactrouter']}
 			live={'https://adopt-me-web.netlify.app'}
 			code={'https://github.com/shameekbaranwal/adopt-me'}
-			position='right'
+			position={left ? 'left' : 'right'}
 		/>
 	);
 }

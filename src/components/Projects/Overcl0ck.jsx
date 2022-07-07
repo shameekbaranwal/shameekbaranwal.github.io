@@ -6,7 +6,7 @@ import overcl0ck2 from '../../assets/projects/overcl0ck2.png';
 import ExternalLink from '../General/ExternalLink.jsx';
 import PCImages from './Common/PCImages.jsx';
 
-export default function Overclock() {
+export default function Overclock({ left }) {
 	const caption = 'A digital clock made of 360 analogue clocks.';
 
 	return (
@@ -24,7 +24,7 @@ export default function Overclock() {
 			technologies={['html', 'css', 'js', 'p5']}
 			live={'https://overcl0ck.netlify.app'}
 			code={'https://github.com/shameekbaranwal/overcl0ck'}
-			position='right'
+			position={left ? 'left' : 'right'}
 		/>
 	);
 }

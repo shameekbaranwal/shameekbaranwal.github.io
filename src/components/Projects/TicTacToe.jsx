@@ -8,7 +8,7 @@ import tictactoe3 from '../../assets/projects/tictactoe3.jpg';
 import tictactoe4 from '../../assets/projects/tictactoe4.jpg';
 import ExternalLink from '../General/ExternalLink.jsx';
 
-export default function TicTacToe() {
+export default function TicTacToe({ left }) {
 	const caption =
 		'A minimalistic progressive web-app implementation of the ancient game.';
 
@@ -26,8 +26,8 @@ export default function TicTacToe() {
 			technologies={['html', 'css', 'js']}
 			live={'https://tic-tac-toe-shmk.netlify.app/'}
 			code={'https://github.com/shameekbaranwal/tic-tac-toe'}
-			position='left'
 			caption={caption}
+			position={left ? 'left' : 'right'}
 		/>
 	);
 }
